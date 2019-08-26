@@ -4,8 +4,8 @@
     "description": "Basic structure for html/es6 app",
     "main": "index.js",
     "scripts": {
-        "build": "browserify ./assets/scripts/index.js -o dist/bundle.js",
-        "watch": "watchify ./assets/scripts/index.js -o dist/bundle.js -v",
+        "build": "browserify ./assets/scripts/index.js -o dist/bundle.js && node-sass sass/main.scss css/style.comp.css",
+        "watch-js": "watchify ./assets/scripts/index.js -o dist/bundle.js -v",
         "watch-sass": "node-sass sass/main.scss css/style.css --watch",
         "compile-sass": "node-sass sass/main.scss css/style.comp.css"
     },
