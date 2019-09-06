@@ -5,9 +5,14 @@ var _objects = _interopRequireDefault(require("./objects.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-console.log(_objects["default"].filter(function (m) {
-  return m.nome === 'Lucas Medeiros';
-}));
+$(function () {
+  $('#first_section').html(_objects["default"].map(function (m) {
+    return m.nome;
+  }));
+  console.log(_objects["default"].filter(function (m) {
+    return m.nome === 'Lucas Medeiros';
+  }));
+});
 
 },{"./objects.js":2}],2:[function(require,module,exports){
 "use strict";
