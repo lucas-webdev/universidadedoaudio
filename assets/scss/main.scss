@@ -5,5 +5,18 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: $mainColor;
+  background-color: white;
 }
+
+.section-title {
+  color: white;
+  font-size: $sectionTitleFontSize;
+}
+
+@each $name in 'red' 'blue' 'green' {
+    .icon-#{$name} {
+        background-color: $name
+    }
+}
+
+@import 'what';
