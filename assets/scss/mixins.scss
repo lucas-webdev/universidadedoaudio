@@ -1,48 +1,15 @@
-@mixin for-phone-only {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-@mixin for-tablet-portait-only {
-  @media (min-width: 600px) and (max-width: 899px) {
-    @content;
-  }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
-@mixin for-tablet-landscape-only {
-  @media (min-width: 900px) and (max-width: 1199px) {
-    @content;
-  }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-@mixin for-desktop-only {
-  @media (min-width: 1200px) and (max-width: 1799px) {
-    @content;
-  }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
-    @content;
-  }
-}
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
   content: $content;
   display: $display;
   position: $pos;
 }
+@mixin flexbox($direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 // Create scalable elements that mantain a ratio. Ex.: div { @include responsive-ratio(16,9) }
 @mixin responsive-ratio($x,$y, $pseudo: false) {
   $padding: unquote( ( $y / $x ) * 100 + '%' );
@@ -96,10 +63,10 @@
 //Animation mixin setup
 //Usage
 // Define animation name, and properties
-@include keyframes(fade-out) {
-  0% { opacity: 1; }
-  90% { opacity: 0; }
-}
+// @include keyframes(fade-out) {
+//   0% { opacity: 1; }
+//   90% { opacity: 0; }
+// }
 // Add animation to element
 // .element {
 //   width: 100px;

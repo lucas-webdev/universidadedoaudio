@@ -1,7 +1,11 @@
 import mentores from "./objects.js";
 $(() => {
-    $('#first_section').html(
-        mentores.map(m => m.nome)
-    )
-    console.log(mentores.filter(m => m.nome === 'Lucas Medeiros'))
-})
+    $('.banners-control li').bind('click', (event) => {
+        const $anchor = $(this).attr('href');
+
+        $('.banners-control').stop().animate({
+            scrollLeft: $($anchor).offset().left
+        }, 1000);
+        event.preventDefault();
+    });
+});
