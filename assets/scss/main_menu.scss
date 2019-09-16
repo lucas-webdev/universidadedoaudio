@@ -6,7 +6,8 @@
   width: 100%;
   height: 80px;
   @include flexbox(row, center, space-between);
-
+  position: fixed;
+  
   .ua-logo {
     max-width: 30%;
     margin-left: 50px;
