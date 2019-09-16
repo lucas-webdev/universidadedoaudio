@@ -12,9 +12,12 @@ $sectionPaddingTop: 40px;
 
 // Breakpoints
 $breakpoints: (
-    "phone":        320px,
-    "tablet-small": 640px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1600px
+    "phone":          320px,
+    "tablet":         640px,
+    "desktop-small":  1024px,
+    "desktop":        1248px,
+    "desktop-wide":   1600px
 );
+
+// Mentors
+$mentors: 'todos', 'Beto-Neves', 'Carlos-Freitas', 'Cesar-Santos', 'Conrado-Ruther', 'Cris-Simoes', 'Paulo-Anhaia', 'Pedro-Peixoto';

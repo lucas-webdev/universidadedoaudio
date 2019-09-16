@@ -3,6 +3,8 @@
 
 #banners {
   position: relative;
+  padding-top: 80px;
+
   .banners-control {
     list-style: none;
     @include flexbox();
@@ -25,14 +27,50 @@
   }
   .banners-content {
     height: calc(100vh - 80px);
+    @include flexbox(row, center, flex-start);
     > div {
-      @include responsive-ratio(16,9);
+      // @include responsive-ratio(16,9);
       width: 100%;
-      max-height: 100%;
+      height: 100%;
     }
-    #beto-neves {
-      background: url('../images/banners/Beto-Neves.png') no-repeat center;
-      background-size: cover;
+    @each $name in $mentors {
+      #mentor-#{$name} {
+        background-image: url('../images/banners/#{$name}.png');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+        flex-shrink: 0;
+        @include flexbox(column, flex-start, center);
+      }
+    }
+    .mentor-content {
+      padding-left: 50%;
+      .mentor-name {
+        font-size: 7rem;
+        color: white;
+        letter-spacing: 1.5rem;
+      }
+      .mentor-description {
+        color: $greyText;
+        font-size: 2rem;
+        padding-left: 3px;
+        letter-spacing: 1rem;
+      }
+      .mentor-btn {
+        color: white;
+        margin-top: 25px;
+        justify-self: flex-end;
+      }
+    }
+  }
+  @include mq('tablet', max) {
+    .banners-content {
+      @each $name in $mentors {
+        #mentor-#{$name} {
+          background-image: url('../images/banners/#{$name}-MOBILE.png');
+          background-position: center;
+        }
+      }
     }
   }
 }

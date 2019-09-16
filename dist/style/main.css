@@ -1,1 +1,274 @@
-html,body{margin:0;padding:0;width:100%;height:100%;background-color:white;font-family:'Dosis', sans-serif !important}.section-title{color:white;font-size:1.8rem}.icon-red{background-color:"red"}.icon-blue{background-color:"blue"}.icon-green{background-color:"green"}#main-menu{background-color:#04080e;width:100%;height:80px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;position:fixed;z-index:100}#main-menu .ua-logo{max-width:30%;margin-left:50px}#main-menu .ua-logo img{max-width:100%;height:50px}#main-menu ul{list-style:none;width:70%;padding-left:0;margin-right:50px;color:white;display:flex;flex-direction:row;align-items:center;justify-content:space-between}#main-menu ul li{position:relative}#main-menu ul li:hover{border-bottom:1px solid #ccad8e}#main-menu ul li.sign-now{border:2px solid #ccad8e;padding:6px}#main-menu ul li.sign-now:hover{border-bottom-width:2px;background-color:rgba(255,255,255,0.1)}#main-menu ul li a{color:white;text-decoration:none}#main-menu ul li.student:hover .submenu--alunos{display:flex;flex-direction:column;align-items:center;justify-content:center}#main-menu ul li.student .submenu--alunos{display:none;position:absolute;top:60px;background-color:black;padding:5px 15px;margin:0}#main-menu ul li.student .submenu--alunos hr{border-color:#ccad8e;width:100%}#main-menu ul li.student .submenu--alunos li{height:20px}#banners{position:relative}#banners .banners-control{list-style:none;display:flex;flex-direction:row;align-items:center;justify-content:center;position:absolute;left:0;right:0;bottom:30px}#banners .banners-control li{width:30px;margin:0 5px}#banners .banners-control li a{display:block;cursor:pointer;width:100%;height:5px;border-bottom:2px solid white}#banners .banners-content{height:calc(100vh - 80px)}#banners .banners-content>div{padding-top:56.25%;width:100%;max-height:100%}#banners .banners-content #beto-neves{background:url("../images/banners/Beto-Neves.png") no-repeat center;background-size:cover}#what{font-size:1.8rem;background-color:black;padding-top:40px}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: 'Dosis', sans-serif !important;
+  font-size: 10px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.section-title {
+  color: white;
+  font-size: 1.8rem; }
+
+.default-button {
+  color: #ccad8e;
+  border: 2px solid white;
+  padding: 5px 10px;
+  font-size: 2rem; }
+  .default-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#main-menu {
+  background-color: #04080e;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  font-size: 1.6rem; }
+  #main-menu .ua-logo {
+    max-width: 30%;
+    margin-left: 50px; }
+    #main-menu .ua-logo img {
+      max-width: 100%;
+      height: 50px; }
+  #main-menu ul {
+    list-style: none;
+    width: 70%;
+    padding-left: 0;
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    #main-menu ul li {
+      position: relative;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      #main-menu ul li:hover a {
+        border-bottom: 1px solid #ccad8e; }
+      #main-menu ul li.sign-now {
+        border: 2px solid #ccad8e;
+        padding: 6px;
+        height: 30px; }
+        #main-menu ul li.sign-now:hover {
+          border-bottom-width: 2px;
+          background-color: rgba(255, 255, 255, 0.1); }
+      #main-menu ul li a {
+        color: white;
+        text-decoration: none; }
+      #main-menu ul li.student:hover a {
+        border: none; }
+      #main-menu ul li.student:hover .submenu--alunos {
+        opacity: 1;
+        visibility: visible; }
+      #main-menu ul li.student .submenu--alunos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 60px;
+        background-color: black;
+        padding: 10px 15px;
+        margin: 0;
+        width: 100%; }
+        #main-menu ul li.student .submenu--alunos hr {
+          border-color: #ccad8e;
+          width: 100%; }
+        #main-menu ul li.student .submenu--alunos li {
+          height: 20px; }
+          #main-menu ul li.student .submenu--alunos li a:hover {
+            border-bottom: 1px solid #ccad8e; }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#banners {
+  position: relative;
+  padding-top: 80px; }
+  #banners .banners-control {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px; }
+    #banners .banners-control li {
+      width: 30px;
+      margin: 0 5px; }
+      #banners .banners-control li a {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        height: 5px;
+        border-bottom: 2px solid white; }
+  #banners .banners-content {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
+    #banners .banners-content > div {
+      width: 100%;
+      height: 100%; }
+    #banners .banners-content #mentor-todos {
+      background-image: url("../images/banners/todos.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Beto-Neves {
+      background-image: url("../images/banners/Beto-Neves.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Carlos-Freitas {
+      background-image: url("../images/banners/Carlos-Freitas.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Cesar-Santos {
+      background-image: url("../images/banners/Cesar-Santos.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Conrado-Ruther {
+      background-image: url("../images/banners/Conrado-Ruther.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Cris-Simoes {
+      background-image: url("../images/banners/Cris-Simoes.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Paulo-Anhaia {
+      background-image: url("../images/banners/Paulo-Anhaia.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content #mentor-Pedro-Peixoto {
+      background-image: url("../images/banners/Pedro-Peixoto.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    #banners .banners-content .mentor-content {
+      padding-left: 50%; }
+      #banners .banners-content .mentor-content .mentor-name {
+        font-size: 7rem;
+        color: white;
+        letter-spacing: 1.5rem; }
+      #banners .banners-content .mentor-content .mentor-description {
+        color: #6e6e6e;
+        font-size: 2rem;
+        padding-left: 3px;
+        letter-spacing: 1rem; }
+      #banners .banners-content .mentor-content .mentor-btn {
+        color: white;
+        margin-top: 25px;
+        justify-self: flex-end; }
+  @media only screen and (max-width: 639px) {
+    #banners .banners-content #mentor-todos {
+      background-image: url("../images/banners/todos-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Beto-Neves {
+      background-image: url("../images/banners/Beto-Neves-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Carlos-Freitas {
+      background-image: url("../images/banners/Carlos-Freitas-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Cesar-Santos {
+      background-image: url("../images/banners/Cesar-Santos-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Conrado-Ruther {
+      background-image: url("../images/banners/Conrado-Ruther-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Cris-Simoes {
+      background-image: url("../images/banners/Cris-Simoes-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Paulo-Anhaia {
+      background-image: url("../images/banners/Paulo-Anhaia-MOBILE.png");
+      background-position: center; }
+    #banners .banners-content #mentor-Pedro-Peixoto {
+      background-image: url("../images/banners/Pedro-Peixoto-MOBILE.png");
+      background-position: center; } }
+
+#what {
+  font-size: 1.8rem;
+  background-color: black;
+  padding-top: 40px; }

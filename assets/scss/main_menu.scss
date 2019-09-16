@@ -8,6 +8,7 @@
   @include flexbox(row, center, space-between);
   position: fixed;
   z-index: 100;
+  font-size: 1.6rem;
 
   .ua-logo {
     max-width: 30%;
@@ -28,12 +29,18 @@
 
     li {
       position: relative;
+      height: 80px;
+      @include flexbox();
+
       &:hover {
-        border-bottom: 1px solid $primaryBeige;
+        a { 
+          border-bottom: 1px solid $primaryBeige; 
+        }
       }
       &.sign-now {
         border: 2px solid $primaryBeige;
         padding: 6px;
+        height: 30px;
 
         &:hover {
           border-bottom-width: 2px;
@@ -46,17 +53,24 @@
       }
       &.student {
         &:hover {
+          a {
+            border: none;
+          }
           .submenu--alunos {
-            @include flexbox(column, center, center);
+            opacity: 1;
+            visibility: visible;
           }
         }
         .submenu--alunos {
-          display: none;
+          @include flexbox(column, center, center);
+          opacity: 0;
+          visibility: hidden;
           position: absolute;
           top: 60px;
           background-color: black;
-          padding: 5px 15px;
+          padding: 10px 15px;
           margin: 0;
+          width: 100%;
           
           hr {
             border-color: $primaryBeige;
@@ -64,6 +78,9 @@
           }
           li {
             height: 20px;
+            a:hover {
+              border-bottom: 1px solid $primaryBeige;
+            }
           }
         }
       }
