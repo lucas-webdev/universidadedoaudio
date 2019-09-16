@@ -42,19 +42,27 @@
         color: white;
         text-decoration: none;
       }
-      .submenu--alunos {
-        position: absolute;
-        top: 60px;
-        background-color: black;
-        padding: 5px 15px;
-        margin: 0;
-        @include flexbox(column, center, center);
-        hr {
-          border-color: $primaryBeige;
-          width: 100%;
+      &.student {
+        &:hover {
+          .submenu--alunos {
+            display: block;
+          }
         }
-        li {
-          height: 20px;
+        .submenu--alunos {
+          display: none;
+          position: absolute;
+          top: 60px;
+          background-color: black;
+          padding: 5px 15px;
+          margin: 0;
+          @include flexbox(column, center, center);
+          hr {
+            border-color: $primaryBeige;
+            width: 100%;
+          }
+          li {
+            height: 20px;
+          }
         }
       }
     }
