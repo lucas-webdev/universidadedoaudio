@@ -128,7 +128,8 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px; }
+    bottom: 30px;
+    z-index: 10; }
     #banners .banners-control li {
       width: 30px;
       margin: 0 5px; }
@@ -140,6 +141,8 @@ a {
         border-bottom: 2px solid white; }
   #banners .banners-content {
     height: calc(100vh - 80px);
+    width: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,86 +150,49 @@ a {
     #banners .banners-content > div {
       width: 100%;
       height: 100%; }
+    #banners .banners-content .mentor-banner-content {
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      position: relative;
+      transition: left 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
     #banners .banners-content #mentor-todos {
-      background-image: url("../images/banners/todos.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/todos.png"); }
+      #banners .banners-content #mentor-todos.active {
+        left: calc(-100% * 0); }
     #banners .banners-content #mentor-Beto-Neves {
-      background-image: url("../images/banners/Beto-Neves.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Beto-Neves.png"); }
+      #banners .banners-content #mentor-Beto-Neves.active {
+        left: calc(-100% * 1); }
     #banners .banners-content #mentor-Carlos-Freitas {
-      background-image: url("../images/banners/Carlos-Freitas.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Carlos-Freitas.png"); }
+      #banners .banners-content #mentor-Carlos-Freitas.active {
+        left: calc(-100% * 2); }
     #banners .banners-content #mentor-Cesar-Santos {
-      background-image: url("../images/banners/Cesar-Santos.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Cesar-Santos.png"); }
+      #banners .banners-content #mentor-Cesar-Santos.active {
+        left: calc(-100% * 3); }
     #banners .banners-content #mentor-Conrado-Ruther {
-      background-image: url("../images/banners/Conrado-Ruther.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Conrado-Ruther.png"); }
+      #banners .banners-content #mentor-Conrado-Ruther.active {
+        left: calc(-100% * 4); }
     #banners .banners-content #mentor-Cris-Simoes {
-      background-image: url("../images/banners/Cris-Simoes.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Cris-Simoes.png"); }
+      #banners .banners-content #mentor-Cris-Simoes.active {
+        left: calc(-100% * 5); }
     #banners .banners-content #mentor-Paulo-Anhaia {
-      background-image: url("../images/banners/Paulo-Anhaia.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Paulo-Anhaia.png"); }
+      #banners .banners-content #mentor-Paulo-Anhaia.active {
+        left: calc(-100% * 6); }
     #banners .banners-content #mentor-Pedro-Peixoto {
-      background-image: url("../images/banners/Pedro-Peixoto.png");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
+      background-image: url("../images/banners/Pedro-Peixoto.png"); }
+      #banners .banners-content #mentor-Pedro-Peixoto.active {
+        left: calc(-100% * 7); }
     #banners .banners-content .mentor-content {
       padding-left: 50%; }
       #banners .banners-content .mentor-content .mentor-name {

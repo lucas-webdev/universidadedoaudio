@@ -12,6 +12,7 @@
     left: 0;
     right: 0;
     bottom: 30px;
+    z-index: 10;
   
     li {
       width: 30px;
@@ -25,22 +26,37 @@
       }
     }
   }
+  
   .banners-content {
     height: calc(100vh - 80px);
+    width: 100%;
+    overflow: hidden;
     @include flexbox(row, center, flex-start);
+    
     > div {
       // @include responsive-ratio(16,9);
       width: 100%;
       height: 100%;
     }
-    @each $name in $mentors {
+    
+    .mentor-banner-content {
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+      flex-shrink: 0;
+      position: relative;
+      transition: left 1s ease-in-out;
+      @include flexbox(column, flex-start, center);
+    }
+
+    @for $i from 1 through length($mentors) {
+      $name: nth($mentors, $i);
+
       #mentor-#{$name} {
         background-image: url('../images/banners/#{$name}.png');
-        background-repeat: no-repeat;
-        background-position: center left;
-        background-size: cover;
-        flex-shrink: 0;
-        @include flexbox(column, flex-start, center);
+        &.active {
+          left: calc(-100% * #{$i - 1});
+        }
       }
     }
     .mentor-content {

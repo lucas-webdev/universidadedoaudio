@@ -4,8 +4,8 @@
     "description": "Basic structure for html/es6 app",
     "main": "index.js",
     "scripts": {
-        "build": "browserify ./assets/scripts/index.js -o dist/bundle.js && node-sass sass/main.scss css/style.comp.css",
-        "watch-js": "watchify ./assets/scripts/index.js -o dist/bundle.js -v",
+        "build": "babel src --out-dir ./dist && node-sass sass/main.scss css/style.comp.css",
+        "watch-js": "watchify ./assets/scripts/index.js -o ./dist/bundle.js -v",
         "watch-sass": "node-sass ./assets/scss/main.scss ./dist/style/main.css -w",
         "compile-sass": "node-sass ./assets/scss/main.scss ./dist/style/main.css --output-style compressed"
     },
@@ -25,9 +25,8 @@
     },
     "homepage": "https://github.com/lucas-webdev/es6-base-app#readme",
     "dependencies": {
-        "browserify": "^16.5.0",
-        "reading-time": "^1.2.0",
-        "watchify": "^3.11.1"
+        "watchify": "^3.11.1",
+        "nodemon": "^1.18.3"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
