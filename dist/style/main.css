@@ -275,6 +275,8 @@ a {
     #banners .banners-content #mentor-Pedro-Peixoto {
       background-image: url("../images/banners/Pedro-Peixoto-MOBILE.png");
       background-position: center; }
+    #banners .banners-content .mentor-banner-content {
+      align-items: flex-end; }
     #banners .banners-content .mentor-content {
       padding-left: 0;
       text-align: right;
