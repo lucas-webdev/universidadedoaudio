@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+#ctaSign {
+  background-color: white;
+  padding: $sectionPaddingMobile 10px;
+  @include flexbox(column, center, space-between);
+
+  .ctaSign__texto {
+    letter-spacing: $defaultLetterSpacing;
+    text-align: center;
+    &--title {
+      color: $primaryBlue;
+      font-size: $titleFontSizeMobile;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    &--subtitle {
+      color: $greyText;
+      font-size: $subtitleFontSizeMobile;
+      letter-spacing: 0.5rem;
+    }
+  }
+  .ctaSign--button {
+    margin-top: 40px;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  @include mq('desktop-small') {
+    padding: $sectionPaddingTop 25px;
+
+    .ctaSign__texto {
+      &--title {
+        font-size: $titleFontSizeDesktop;
+      }
+      &--subtitle {
+        font-size: $subtitleFontSizeDesktop;
+      }
+    }
+    .ctaSign--button {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+  }
+}

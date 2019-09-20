@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Universidade do Audio</title>
@@ -15,25 +15,29 @@
       <div class="ua-logo">
         <img src="./dist/images/ua-logo.png">
       </div>
-      <ul>
-        <li><a href="what">O QUE É A UA</a></li>
-        <li><a href="mentors">MENTORES</a></li>
-        <li><a href="plans">PLANOS</a></li>
-        <li><a href="questions">DÚVIDAS</a></li>
-        <li class="student">
-          ÁREA DO ALUNO
-          <ul class="submenu--alunos">
-            <li>
-              <a href="https://universidadedoaudio.com/" target="_blank">LOGIN</a>
-            </li>
-            <hr/>
-            <li>
-              <a href="https://universidadedoaudio.com/" target="_blank">PROVAS</a>
-            </li>
-          </ul>
-        </li>
-        <li class="sign-now"><a href="#signin">ASSINE AGORA</a></li>
-      </ul>
+      <input class="mobile-menu-trigger" type="checkbox" id="collapse-menu">
+      <label class="mobile-menu-trigger" for="collapse-menu">&#9776;</label>
+      <div class="menu-content">
+        <ul>
+          <li><a href="what">O QUE É A UA</a></li>
+          <li><a href="mentors">MENTORES</a></li>
+          <li><a href="plans">PLANOS</a></li>
+          <li><a href="questions">DÚVIDAS</a></li>
+          <li class="student">
+            ÁREA DO ALUNO
+            <ul class="submenu--alunos">
+              <li>
+                <a href="https://universidadedoaudio.com/" target="_blank">LOGIN</a>
+              </li>
+              <hr/>
+              <li>
+                <a href="https://universidadedoaudio.com/" target="_blank">PROVAS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sign-now"><a href="#signin">ASSINE AGORA</a></li>
+        </ul>
+      </div>
     </nav>
     <section id="banners">
       <ul class="banners-control">
@@ -47,11 +51,20 @@
         <li><a class="mentor-banner-navlink" href="#mentor-Pedro-Peixoto"></a></li>
       </ul>
       <div class="banners-content">
-        <div class="mentor-banner-content"  id="mentor-todos"></div>
+        <div class="mentor-banner-content"  id="mentor-todos">
+          <div class="mentor-content">
+            <div class="mentor-name">UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">LOREM IPSUM</div>
+          </div>
+        </div>
         <div class="mentor-banner-content" id="mentor-Beto-Neves">
           <div class="mentor-content">
             <div class="mentor-name">BETO NEVES</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -60,7 +73,11 @@
         <div class="mentor-banner-content" id="mentor-Carlos-Freitas">
           <div class="mentor-content">
             <div class="mentor-name">CARLOS FREITAS</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -69,7 +86,11 @@
         <div class="mentor-banner-content" id="mentor-Cesar-Santos">
           <div class="mentor-content">
             <div class="mentor-name">CESAR SANTOS</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -78,7 +99,11 @@
         <div class="mentor-banner-content" id="mentor-Conrado-Ruther">
           <div class="mentor-content">
             <div class="mentor-name">CONRADO RUTHER</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -87,7 +112,11 @@
         <div class="mentor-banner-content" id="mentor-Cris-Simoes">
           <div class="mentor-content">
             <div class="mentor-name">CRIS SIMÕES</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -96,7 +125,11 @@
         <div class="mentor-banner-content" id="mentor-Paulo-Anhaia">
           <div class="mentor-content">
             <div class="mentor-name">PAULO ANHAIA</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
@@ -105,13 +138,28 @@
         <div class="mentor-banner-content" id="mentor-Pedro-Peixoto">
           <div class="mentor-content">
             <div class="mentor-name">PEDRO PEIXOTO</div>
-            <div class="mentor-description">MENTOR - UNIVERSIDADE DO ÁUDIO</div>
+            <div class="mentor-description">
+              <span>MENTOR</span>
+              <span class="hidden-mobile"> - </span>
+              <span>UNIVERSIDADE DO ÁUDIO</span>
+            </div>
             <div class="mentor-btn">
               <a class="default-button" href="https://universidadedoaudio.com/">VER PERFIL</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="ctaSign">
+      <div class="ctaSign__texto">
+        <div class="ctaSign__texto--title">
+          JÁ SONHOU EM VIVER DE MÚSICA ?
+        </div>
+        <div class="ctaSign__texto--subtitle">
+          REALIZE AGORA COM A UNIVERSIDADE DO ÁUDIO!
+        </div>
+      </div>
+      <a class="ctaSign--button secondary-button" href="#" target="_blank">ASSINE AGORA POR R$39,00/MÊS</a>
     </section>
     <section id="what">
       <div class="section-title">
@@ -136,6 +184,5 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.4/cash.min.js"></script>
     <script type="text/javascript" src="dist/bundle.js"></script>
-</body>
-
+  </body>
 </html>

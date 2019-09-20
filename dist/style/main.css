@@ -24,6 +24,14 @@ a {
   .default-button:hover {
     background-color: rgba(255, 255, 255, 0.1); }
 
+.secondary-button {
+  color: #09326a;
+  border: 2px solid #ccad8e;
+  padding: 5px 10px;
+  font-size: 2rem; }
+  .secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+
 /*
 .site-header {
     padding: 2rem;
@@ -45,17 +53,20 @@ a {
   position: fixed;
   z-index: 100;
   font-size: 1.6rem; }
+  #main-menu .menu-content {
+    width: 70%;
+    margin-right: 50px; }
   #main-menu .ua-logo {
     max-width: 30%;
-    margin-left: 50px; }
+    margin-left: 50px;
+    flex-shrink: 0; }
     #main-menu .ua-logo img {
       max-width: 100%;
       height: 50px; }
   #main-menu ul {
     list-style: none;
-    width: 70%;
+    width: 100%;
     padding-left: 0;
-    margin-right: 50px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -105,6 +116,35 @@ a {
           height: 20px; }
           #main-menu ul li.student .submenu--alunos li a:hover {
             border-bottom: 1px solid #ccad8e; }
+  #main-menu .mobile-menu-trigger {
+    display: none; }
+  @media only screen and (max-width: 819px) {
+    #main-menu .ua-logo {
+      margin-left: 15px; }
+    #main-menu .mobile-menu-trigger {
+      display: block;
+      color: white;
+      position: absolute;
+      right: 50px;
+      font-size: 3rem; }
+    #main-menu input.mobile-menu-trigger {
+      display: none; }
+      #main-menu input.mobile-menu-trigger:checked ~ .menu-content {
+        max-height: 100vh;
+        top: 60px;
+        position: fixed;
+        right: 0; }
+    #main-menu .menu-content {
+      max-height: 0;
+      overflow: hidden;
+      width: 180px;
+      margin-right: 0; }
+      #main-menu .menu-content ul {
+        flex-direction: column;
+        margin-right: 15px;
+        width: 100%;
+        background: black;
+        padding-bottom: 30px; } }
 
 /*
 .site-header {
@@ -208,7 +248,9 @@ a {
         color: white;
         margin-top: 25px;
         justify-self: flex-end; }
-  @media only screen and (max-width: 639px) {
+  @media only screen and (max-width: 819px) {
+    #banners .banners-control {
+      padding-left: 0; }
     #banners .banners-content #mentor-todos {
       background-image: url("../images/banners/todos-MOBILE.png");
       background-position: center; }
@@ -232,7 +274,63 @@ a {
       background-position: center; }
     #banners .banners-content #mentor-Pedro-Peixoto {
       background-image: url("../images/banners/Pedro-Peixoto-MOBILE.png");
-      background-position: center; } }
+      background-position: center; }
+    #banners .banners-content .mentor-content {
+      padding-left: 0;
+      text-align: right;
+      padding-right: 5%; }
+      #banners .banners-content .mentor-content .mentor-name {
+        font-size: 2rem; }
+      #banners .banners-content .mentor-content .mentor-description {
+        font-size: 1.5rem; }
+        #banners .banners-content .mentor-content .mentor-description span {
+          display: block; }
+          #banners .banners-content .mentor-content .mentor-description span.hidden-mobile {
+            display: none; } }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#ctaSign {
+  background-color: white;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  #ctaSign .ctaSign__texto {
+    letter-spacing: 1rem;
+    text-align: center; }
+    #ctaSign .ctaSign__texto--title {
+      color: #09326a;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: bold; }
+    #ctaSign .ctaSign__texto--subtitle {
+      color: #6e6e6e;
+      font-size: 1rem;
+      letter-spacing: 0.5rem; }
+  #ctaSign .ctaSign--button {
+    margin-top: 40px;
+    display: block;
+    font-size: 1.5rem; }
+  @media only screen and (min-width: 1024px) {
+    #ctaSign {
+      padding: 40px 25px; }
+      #ctaSign .ctaSign__texto--title {
+        font-size: 2.5rem; }
+      #ctaSign .ctaSign__texto--subtitle {
+        font-size: 1.5rem; }
+      #ctaSign .ctaSign--button {
+        font-size: 2rem;
+        margin-top: 50px; } }
 
 #what {
   font-size: 1.8rem;

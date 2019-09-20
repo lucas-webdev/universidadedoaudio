@@ -7,13 +7,23 @@ $greyText: #6e6e6e;
 // Fonts
 $sectionTitleFontSize: 1.8rem;
 
+$defaultLetterSpacing: 1rem;
+$largeLetterSpacing: 1.5rem;
+
+$titleFontSizeMobile: 2rem;
+$subtitleFontSizeMobile: 1rem;
+
+$titleFontSizeDesktop: 2.5rem;
+$subtitleFontSizeDesktop: 1.5rem;
+
 // Structure
 $sectionPaddingTop: 40px;
+$sectionPaddingMobile: 30px;
 
 // Breakpoints
 $breakpoints: (
     "phone":          320px,
-    "tablet":         640px,
+    "tablet":         820px,
     "desktop-small":  1024px,
     "desktop":        1248px,
     "desktop-wide":   1600px
