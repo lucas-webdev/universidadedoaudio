@@ -1,6 +1,29 @@
 @import 'variables';
+@import 'mixins';
+
 #what {
-  font-size: $sectionTitleFontSize;
-  background-color: black;
+  @include flexbox(column, center, space-between);
   padding-top: $sectionPaddingTop;
+  background-image: url('../images/bg-o-que-e.png');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  
+  .video-wrapper {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+
+    .section-title {
+      margin-bottom: 15px;
+    }
+    .section-subtitle {
+      margin-bottom: 30px;
+    }
+    
+  }
 }

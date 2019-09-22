@@ -19,7 +19,13 @@ a {
 
 .section-title {
   color: white;
-  font-size: $sectionTitleFontSize;
+  font-size: $titleFontSizeMobile;
+  letter-spacing: $smallLetterSpacing;
+}
+
+.section-subtitle {
+  font-size: $subtitleFontSizeMobile;
+  letter-spacing: $smallLetterSpacing;
 }
 
 .default-button {
