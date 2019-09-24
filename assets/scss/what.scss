@@ -3,7 +3,6 @@
 
 #what {
   @include flexbox(column, center, space-between);
-  padding-top: $sectionPaddingTop;
   background-image: url('../images/bg-o-que-e.png');
   height: 100vh;
   background-size: cover;
@@ -11,12 +10,12 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  padding: $sectionPaddingTop 20px 0;
   
   .video-wrapper {
     width: 100%;
     color: white;
     text-align: center;
-    padding: 0 20px;
 
     .section-title {
       margin-bottom: 15px;
@@ -25,5 +24,32 @@
       margin-bottom: 30px;
     }
     
+  }
+  .progress-bar-wrapper {
+    background-image: linear-gradient($tertiaryBlue, $quarternaryBlue);
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .indicado-progress {
+      margin-bottom: 10px;
+      
+      span {
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 5px;
+        display: block;
+        text-align: center;
+      }
+    }
+    
+    .progress {
+      background-color: black;
+      .progress-bar {
+        background-color: white;
+        color: $primaryBeige;
+      }
+    }
   }
 }

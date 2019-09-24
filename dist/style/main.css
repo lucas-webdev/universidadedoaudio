@@ -354,20 +354,38 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
   background-image: url("../images/bg-o-que-e.png");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  padding: 40px 20px 0; }
   #what .video-wrapper {
     width: 100%;
     color: white;
-    text-align: center;
-    padding: 0 20px; }
+    text-align: center; }
     #what .video-wrapper .section-title {
       margin-bottom: 15px; }
     #what .video-wrapper .section-subtitle {
       margin-bottom: 30px; }
+  #what .progress-bar-wrapper {
+    background-image: linear-gradient(#001128, #000b1a);
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 20px; }
+    #what .progress-bar-wrapper .indicado-progress {
+      margin-bottom: 10px; }
+      #what .progress-bar-wrapper .indicado-progress span {
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 5px;
+        display: block;
+        text-align: center; }
+    #what .progress-bar-wrapper .progress {
+      background-color: black; }
+      #what .progress-bar-wrapper .progress .progress-bar {
+        background-color: white;
+        color: #ccad8e; }
