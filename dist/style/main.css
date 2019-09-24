@@ -355,7 +355,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-image: url("../images/bg-o-que-e.png");
-  height: 100vh;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -375,13 +375,16 @@ a {
     width: 100%;
     padding: 10px 15px;
     position: relative;
-    margin-bottom: 20px; }
+    margin: 20px auto; }
+    #what .progress-bar-wrapper .section-title {
+      margin-bottom: 15px; }
     #what .progress-bar-wrapper .indicado-progress {
-      margin-bottom: 10px; }
-      #what .progress-bar-wrapper .indicado-progress span {
-        font-size: 1.2rem;
+      margin-bottom: 10px;
+      position: relative; }
+      #what .progress-bar-wrapper .indicado-progress > span {
+        font-size: 1.3rem;
         color: white;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         display: block;
         text-align: center; }
     #what .progress-bar-wrapper .progress {
@@ -389,3 +392,9 @@ a {
       #what .progress-bar-wrapper .progress .progress-bar {
         background-color: white;
         color: #ccad8e; }
+        #what .progress-bar-wrapper .progress .progress-bar span {
+          position: absolute;
+          left: 0;
+          top: 10px;
+          font-size: 1rem;
+          color: white; }
