@@ -34,11 +34,14 @@
 
     .section-title {
       margin-bottom: 15px;
+      text-align: center;
     }
 
     .indicado-progress {
       margin-bottom: 10px;
       position: relative;
+      width: 80%;
+      margin: 0 auto 10px;
       
       > span {
         font-size: 1.3rem;
@@ -51,6 +54,7 @@
     
     .progress {
       background-color: black;
+
       .progress-bar {
         background-color: white;
         color: $primaryBeige;
@@ -58,7 +62,7 @@
           position: absolute;
           left: 0;
           top: 10px;
-          font-size: 1rem;
+          font-size: 1.15rem;
           color: white;
         }
       }

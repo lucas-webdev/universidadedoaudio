@@ -15,11 +15,11 @@ a {
 .section-title {
   color: white;
   font-size: 2rem;
-  letter-spacing: 0.75rem; }
+  letter-spacing: 0.4rem; }
 
 .section-subtitle {
   font-size: 1.2rem;
-  letter-spacing: 0.75rem; }
+  letter-spacing: 0.4rem; }
 
 .default-button {
   color: #ccad8e;
@@ -243,12 +243,12 @@ a {
       #banners .banners-content .mentor-content .mentor-name {
         font-size: 7rem;
         color: white;
-        letter-spacing: 1.5rem; }
+        letter-spacing: 1.1rem; }
       #banners .banners-content .mentor-content .mentor-description {
         color: #6e6e6e;
         font-size: 2rem;
         padding-left: 3px;
-        letter-spacing: 1rem; }
+        letter-spacing: 0.8rem; }
       #banners .banners-content .mentor-content .mentor-btn {
         color: white;
         margin-top: 25px;
@@ -313,7 +313,7 @@ a {
   align-items: center;
   justify-content: space-between; }
   #ctaSign .ctaSign__texto {
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
     text-align: center; }
     #ctaSign .ctaSign__texto--title {
       color: #09326a;
@@ -377,10 +377,13 @@ a {
     position: relative;
     margin: 20px auto; }
     #what .progress-bar-wrapper .section-title {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      text-align: center; }
     #what .progress-bar-wrapper .indicado-progress {
       margin-bottom: 10px;
-      position: relative; }
+      position: relative;
+      width: 80%;
+      margin: 0 auto 10px; }
       #what .progress-bar-wrapper .indicado-progress > span {
         font-size: 1.3rem;
         color: white;
@@ -396,5 +399,44 @@ a {
           position: absolute;
           left: 0;
           top: 10px;
-          font-size: 1rem;
+          font-size: 1.15rem;
           color: white; }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#exclusiveContent {
+  padding: 40px 20px; }
+  #exclusiveContent .section-title {
+    color: #09326a; }
+  #exclusiveContent .videos-wrapper .list-inline li {
+    position: relative; }
+    #exclusiveContent .videos-wrapper .list-inline li svg {
+      position: absolute;
+      left: 150px;
+      font-size: 6rem;
+      top: 70px;
+      color: white;
+      width: 30px;
+      opacity: 1;
+      z-index: 11; }
+    #exclusiveContent .videos-wrapper .list-inline li .video-content {
+      margin: 15px auto;
+      max-width: 320px; }
+      #exclusiveContent .videos-wrapper .list-inline li .video-content iframe {
+        width: 100%; }
+      #exclusiveContent .videos-wrapper .list-inline li .video-content--blocked {
+        pointer-events: none;
+        touch-action: none;
+        background: rgba(0, 0, 0, 0.9); }
+        #exclusiveContent .videos-wrapper .list-inline li .video-content--blocked iframe {
+          opacity: 0.2 !important;
+          filter: alpha(opacity=20);
+          /* For IE8 and earlier */ }

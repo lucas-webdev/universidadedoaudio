@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+
+#exclusiveContent {
+  padding: $sectionPaddingTop 20px;
+
+  .section-title {
+    color: $primaryBlue;
+  }
+
+  .videos-wrapper {
+    .list-inline {
+      li {
+        position: relative;
+        
+        svg {
+          position: absolute;
+          left: 150px;
+          font-size: 6rem;
+          top: 70px;
+          color: white;
+          width: 30px;
+          opacity: 1;
+          z-index: 11;
+        }
+        
+        .video-content {
+          margin: 15px auto;
+          max-width: 320px;
+  
+          iframe {
+            width: 100%;
+          }
+  
+          &--blocked {
+            pointer-events: none;
+            touch-action: none;
+            background: transparentize($color: #000000, $amount: 0.1);
+            iframe {
+              opacity: 0.2 !important;
+              filter: alpha(opacity=20); /* For IE8 and earlier */
+            }
+          }
+        }
+      }
+    }
+  }
+}
