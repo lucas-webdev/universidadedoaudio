@@ -17,6 +17,10 @@ a {
   }
 }
 
+section {
+  position: relative;
+}
+
 .section-title {
   color: white;
   font-size: $titleFontSizeMobile;
@@ -55,3 +59,5 @@ a {
 @import 'cta_sign';
 @import 'what';
 @import 'exclusive';
+@import 'testimonials';
+@import 'plans';

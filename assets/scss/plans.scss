@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'mixins';
+
+#plans {
+  padding: $sectionPaddingMobile 20px;
+  @include flexbox(column, center, center);
+  position: relative;
+
+  .card {
+    margin-bottom: 30px;
+    border: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-header {
+      font-size: 1.6rem;
+      color: $primaryBlue;
+      letter-spacing: $smallLetterSpacing;
+      text-align: center;
+      font-weight: bold;
+
+      &--mensal {
+        border-top: 5px solid $greyText;
+      }
+      &--anual {
+        border-top: 5px solid $primaryBeige;
+      }
+    }
+
+    .card-body {
+      background: rgba(0,0,0,.03);
+      text-align: center;
+
+      .card-text {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+
+      ul {
+        text-align: left;
+        padding-left: 20px;
+
+        li {
+          .highlight {
+            color: $primaryBlue;
+          }
+        }
+      }
+
+      .plans-btn {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+      }
+    }
+    
+  }
+}

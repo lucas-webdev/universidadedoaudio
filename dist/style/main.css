@@ -12,6 +12,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+section {
+  position: relative; }
+
 .section-title {
   color: white;
   font-size: 2rem;
@@ -420,7 +423,8 @@ a {
     position: relative; }
     #exclusiveContent .videos-wrapper .list-inline li svg {
       position: absolute;
-      left: 150px;
+      left: 50%;
+      margin-left: -15px;
       font-size: 6rem;
       top: 70px;
       color: white;
@@ -440,3 +444,86 @@ a {
           opacity: 0.2 !important;
           filter: alpha(opacity=20);
           /* For IE8 and earlier */ }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#testimonials {
+  background: url("../images/bg-depoimentos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 30px 20px; }
+  #testimonials .carousel .carousel-inner .carousel-item .carousel-text {
+    margin-top: 35px;
+    text-align: center; }
+    #testimonials .carousel .carousel-inner .carousel-item .carousel-text h5 {
+      font-style: italic;
+      color: #ccad8e; }
+    #testimonials .carousel .carousel-inner .carousel-item .carousel-text p {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold; }
+  #testimonials .carousel .carousel-inner .carousel-item img {
+    width: 50px;
+    height: auto;
+    margin: 0 auto; }
+  #testimonials .carousel .carousel-control-next-icon,
+  #testimonials .carousel .carousel-control-prev-icon {
+    height: 100%;
+    background-position: 0 -65px; }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#plans {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  #plans .card {
+    margin-bottom: 30px;
+    border: 0; }
+    #plans .card:last-child {
+      margin-bottom: 0; }
+    #plans .card .card-header {
+      font-size: 1.6rem;
+      color: #09326a;
+      letter-spacing: 0.4rem;
+      text-align: center;
+      font-weight: bold; }
+      #plans .card .card-header--mensal {
+        border-top: 5px solid #6e6e6e; }
+      #plans .card .card-header--anual {
+        border-top: 5px solid #ccad8e; }
+    #plans .card .card-body {
+      background: rgba(0, 0, 0, 0.03);
+      text-align: center; }
+      #plans .card .card-body .card-text {
+        margin-bottom: 20px;
+        font-size: 1.2rem; }
+      #plans .card .card-body ul {
+        text-align: left;
+        padding-left: 20px; }
+        #plans .card .card-body ul li .highlight {
+          color: #09326a; }
+      #plans .card .card-body .plans-btn {
+        font-size: 1.4rem;
+        margin-bottom: 10px; }
