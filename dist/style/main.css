@@ -404,6 +404,51 @@ section {
           top: 10px;
           font-size: 1.15rem;
           color: white; }
+  @media only screen and (min-width: 1024px) {
+    #what {
+      padding-bottom: 150px;
+      margin-bottom: 100px; }
+      #what .section-title {
+        font-size: 3rem;
+        margin-bottom: 10px; }
+      #what .section-subtitle {
+        font-size: 2rem; }
+      #what .video-wrapper .video-content iframe {
+        width: 640px;
+        height: 400px; }
+      #what .progress-bar-wrapper {
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        margin-top: -75px;
+        height: 150px;
+        border-top: 5px solid #ccad8e; }
+        #what .progress-bar-wrapper .section-title {
+          font-size: 1.6rem;
+          font-weight: bold;
+          border-bottom: 1px solid #ccad8e;
+          width: 175px;
+          margin: 0 auto 20px; }
+        #what .progress-bar-wrapper .progress-bar-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress > span {
+            font-size: 1.6rem;
+            margin-bottom: 10px; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress {
+            width: 70%;
+            margin: 20px auto; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.nao-sabe span {
+            left: 15%;
+            top: 20px; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.sabe-mas-nao-sabe span {
+            left: 50%;
+            top: 25px; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.acha-que-sabe span {
+            left: 75%;
+            top: 25px; } }
 
 /*
 .site-header {
@@ -444,6 +489,24 @@ section {
           opacity: 0.2 !important;
           filter: alpha(opacity=20);
           /* For IE8 and earlier */ }
+  @media only screen and (min-width: 1024px) {
+    #exclusiveContent .section-title,
+    #exclusiveContent .section-subtitle {
+      text-align: center; }
+    #exclusiveContent .section-title {
+      font-size: 2.8rem; }
+    #exclusiveContent .section-subtitle {
+      font-size: 2rem; }
+    #exclusiveContent .videos-wrapper {
+      margin-top: 25px; }
+      #exclusiveContent .videos-wrapper .list-inline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; }
+        #exclusiveContent .videos-wrapper .list-inline li {
+          position: relative;
+          max-width: 23%; } }
 
 /*
 .site-header {
@@ -527,3 +590,63 @@ section {
       #plans .card .card-body .plans-btn {
         font-size: 1.4rem;
         margin-bottom: 10px; }
+  @media only screen and (min-width: 1024px) {
+    #plans .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      height: 300px; }
+      #plans .container .card {
+        width: 40%;
+        height: 100%;
+        position: relative; }
+        #plans .container .card .card-header {
+          font-size: 2rem; }
+        #plans .container .card .card-text {
+          font-size: 1.8rem; }
+        #plans .container .card .btn {
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+          display: block;
+          width: 170px;
+          margin: auto; } }
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: url("../images/bg-depoimentos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto; }
+  #team .section-title {
+    font-weight: bold;
+    margin-bottom: 30px; }
+  #team .team-members {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #team .team-members--person {
+      width: 40%;
+      margin-bottom: 20px; }
+      #team .team-members--person img {
+        width: 100%;
+        height: auto; }

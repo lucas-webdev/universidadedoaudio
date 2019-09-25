@@ -68,4 +68,80 @@
       }
     }
   }
+
+  @include mq('desktop-small') {
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .section-subtitle {
+      font-size: 2rem;
+    }
+
+    .video-wrapper {
+      .video-content {
+        iframe {
+          width: 640px;
+          height: 400px;
+        }
+      }
+    }
+
+    .progress-bar-wrapper {
+      position: absolute;
+      top: 100%;
+      width: 80%;
+      margin-top: -75px;
+      height: 150px;
+      border-top: 5px solid $primaryBeige;
+
+      .section-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-bottom: 1px solid $primaryBeige;
+        width: 175px;
+        margin: 0 auto 20px;
+      }
+
+      .progress-bar-content {
+        @include flexbox();
+
+        .indicado-progress {
+
+          > span {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+          }
+
+          .progress {
+            width: 70%;
+            margin: 20px auto;
+          }
+          .progress-bar {
+            &.nao-sabe {
+              span {
+                left: 15%;
+                top: 20px;
+              }
+            }
+            &.sabe-mas-nao-sabe {
+              span {
+                left: 50%;
+                top: 25px;
+              }
+            }
+            &.acha-que-sabe {
+              span {
+                left: 75%;
+                top: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -46,4 +46,30 @@
       }
     }
   }
+
+  @include mq('desktop-small') {
+    .section-title,
+    .section-subtitle {
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+    }
+
+    .section-subtitle {
+      font-size: 2rem;
+    }
+    
+    .videos-wrapper {
+      margin-top: 25px;
+      .list-inline {
+        @include flexbox(row, center, space-around);
+        li {
+          position: relative;
+          max-width: 23%;
+        }
+      }
+    }
+  }
 }

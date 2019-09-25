@@ -56,4 +56,36 @@
     }
     
   }
+
+  @include mq('desktop-small') {
+    .container {
+      @include flexbox(row, flex-start, space-around);
+      height: 300px;
+
+      .card {
+        width: 40%;
+        height: 100%;
+        position: relative;
+        .card-header {
+          font-size: 2rem;
+        }
+
+        .card-text {
+          font-size: 1.8rem;
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+          display: block;
+          width: 170px;
+          margin: auto;
+        }
+
+      }
+    }
+
+  }
 }
