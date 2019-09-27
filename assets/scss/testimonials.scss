@@ -38,4 +38,29 @@
       background-position: 0 -65px;
     }
   }
+
+  @include mq('desktop-small') {
+    padding: $sectionPaddingDesktop 40px;
+    height: 60vh;
+
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          .carousel-text {
+            h5 {
+              font-size: 2.5rem;
+            }
+            p {
+              font-size: 3rem;
+              width: 60%;
+              margin: 25px auto;
+            }
+          }
+          img {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }

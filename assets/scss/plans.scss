@@ -60,18 +60,28 @@
   @include mq('desktop-small') {
     .container {
       @include flexbox(row, flex-start, space-around);
-      height: 300px;
+      height: 450px;
 
       .card {
-        width: 40%;
+        width: 45%;
         height: 100%;
         position: relative;
+
+        &:first-child {
+          .card-text {
+            margin-top: 30px;
+          }
+        }
+
         .card-header {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
 
         .card-text {
-          font-size: 1.8rem;
+          font-size: 2.2rem;
+          li {
+            margin-bottom: 15px;
+          }
         }
 
         .btn {
@@ -80,8 +90,9 @@
           left: 0;
           right: 0;
           display: block;
-          width: 170px;
+          width: 220px;
           margin: auto;
+          font-size: 2.2rem;
         }
 
       }

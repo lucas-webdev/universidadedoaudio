@@ -28,7 +28,7 @@
   }
 
   @include mq('desktop-small') {
-    padding: $sectionPaddingTop 25px;
+    padding: $sectionPaddingDesktop 25px;
 
     .ctaSign__texto {
       &--title {

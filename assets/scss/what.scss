@@ -10,7 +10,7 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding: $sectionPaddingTop 20px 0;
+  padding: $sectionPaddingDesktop 20px 0;
   
   .video-wrapper {
     width: 100%;
@@ -70,8 +70,8 @@
   }
 
   @include mq('desktop-small') {
-    padding-bottom: 150px;
-    margin-bottom: 100px;
+    padding-bottom: 200px;
+    margin-bottom: 110px;
 
     .section-title {
       font-size: 3rem;
@@ -94,16 +94,16 @@
       position: absolute;
       top: 100%;
       width: 80%;
-      margin-top: -75px;
-      height: 150px;
+      margin-top: -112px;
+      height: 224px;
       border-top: 5px solid $primaryBeige;
 
       .section-title {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
         font-weight: bold;
         border-bottom: 1px solid $primaryBeige;
-        width: 175px;
-        margin: 0 auto 20px;
+        width: 300px;
+        margin: 20px auto 30px;
       }
 
       .progress-bar-content {
@@ -112,31 +112,37 @@
         .indicado-progress {
 
           > span {
-            font-size: 1.6rem;
+            font-size: 2.2rem;
             margin-bottom: 10px;
           }
 
           .progress {
             width: 70%;
-            margin: 20px auto;
+            margin: 30px auto;
           }
           .progress-bar {
+            &.nao-sabe,
+            &.sabe-mas-nao-sabe,
+            &.acha-que-sabe {
+              span {
+                font-size: 1.6rem;
+                top: 35px;
+              }
+            }
+            
             &.nao-sabe {
               span {
                 left: 15%;
-                top: 20px;
               }
             }
             &.sabe-mas-nao-sabe {
               span {
                 left: 50%;
-                top: 25px;
               }
             }
             &.acha-que-sabe {
               span {
                 left: 75%;
-                top: 25px;
               }
             }
           }

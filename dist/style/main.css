@@ -325,7 +325,7 @@ section {
     font-size: 1.5rem; }
   @media only screen and (min-width: 1024px) {
     #ctaSign {
-      padding: 40px 25px; }
+      padding: 90px 25px; }
       #ctaSign .ctaSign__texto--title {
         font-size: 2.5rem; }
       #ctaSign .ctaSign__texto--subtitle {
@@ -356,7 +356,7 @@ section {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding: 40px 20px 0; }
+  padding: 90px 20px 0; }
   #what .video-wrapper {
     width: 100%;
     color: white;
@@ -398,8 +398,8 @@ section {
           color: white; }
   @media only screen and (min-width: 1024px) {
     #what {
-      padding-bottom: 150px;
-      margin-bottom: 100px; }
+      padding-bottom: 200px;
+      margin-bottom: 110px; }
       #what .section-title {
         font-size: 3rem;
         margin-bottom: 10px; }
@@ -412,35 +412,35 @@ section {
         position: absolute;
         top: 100%;
         width: 80%;
-        margin-top: -75px;
-        height: 150px;
+        margin-top: -112px;
+        height: 224px;
         border-top: 5px solid #ccad8e; }
         #what .progress-bar-wrapper .section-title {
-          font-size: 1.6rem;
+          font-size: 2.4rem;
           font-weight: bold;
           border-bottom: 1px solid #ccad8e;
-          width: 175px;
-          margin: 0 auto 20px; }
+          width: 300px;
+          margin: 20px auto 30px; }
         #what .progress-bar-wrapper .progress-bar-content {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress > span {
-            font-size: 1.6rem;
+            font-size: 2.2rem;
             margin-bottom: 10px; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress {
             width: 70%;
-            margin: 20px auto; }
+            margin: 30px auto; }
+          #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.nao-sabe span, #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.sabe-mas-nao-sabe span, #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.acha-que-sabe span {
+            font-size: 1.6rem;
+            top: 35px; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.nao-sabe span {
-            left: 15%;
-            top: 20px; }
+            left: 15%; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.sabe-mas-nao-sabe span {
-            left: 50%;
-            top: 25px; }
+            left: 50%; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.acha-que-sabe span {
-            left: 75%;
-            top: 25px; } }
+            left: 75%; } }
 
 /*
 .site-header {
@@ -453,7 +453,7 @@ section {
 }
 */
 #exclusiveContent {
-  padding: 40px 20px; }
+  padding: 90px 20px; }
   #exclusiveContent .section-title {
     color: #09326a; }
   #exclusiveContent .videos-wrapper .list-inline li {
@@ -535,6 +535,18 @@ section {
   #testimonials .carousel .carousel-control-prev-icon {
     height: 100%;
     background-position: 0 -65px; }
+  @media only screen and (min-width: 1024px) {
+    #testimonials {
+      padding: 90px 40px;
+      height: 60vh; }
+      #testimonials .carousel .carousel-inner .carousel-item .carousel-text h5 {
+        font-size: 2.5rem; }
+      #testimonials .carousel .carousel-inner .carousel-item .carousel-text p {
+        font-size: 3rem;
+        width: 60%;
+        margin: 25px auto; }
+      #testimonials .carousel .carousel-inner .carousel-item img {
+        width: 140px; } }
 
 /*
 .site-header {
@@ -588,23 +600,28 @@ section {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-around;
-      height: 300px; }
+      height: 450px; }
       #plans .container .card {
-        width: 40%;
+        width: 45%;
         height: 100%;
         position: relative; }
+        #plans .container .card:first-child .card-text {
+          margin-top: 30px; }
         #plans .container .card .card-header {
-          font-size: 2rem; }
+          font-size: 2.5rem; }
         #plans .container .card .card-text {
-          font-size: 1.8rem; }
+          font-size: 2.2rem; }
+          #plans .container .card .card-text li {
+            margin-bottom: 15px; }
         #plans .container .card .btn {
           position: absolute;
           bottom: 30px;
           left: 0;
           right: 0;
           display: block;
-          width: 170px;
-          margin: auto; } }
+          width: 220px;
+          margin: auto;
+          font-size: 2.2rem; } }
 
 /*
 .site-header {
@@ -638,7 +655,37 @@ section {
     flex-wrap: wrap; }
     #team .team-members--person {
       width: 40%;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      position: relative; }
+      #team .team-members--person .overlay-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        background-color: rgba(9, 50, 106, 0.8);
+        transition: opacity 0.5s;
+        position: absolute;
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        color: white;
+        font-size: 1.5rem; }
+        #team .team-members--person .overlay-member .mentor-name {
+          font-size: 1.8rem;
+          color: #ccad8e;
+          font-weight: bold; }
+      #team .team-members--person:hover .overlay-member {
+        opacity: 1; }
       #team .team-members--person img {
         width: 100%;
         height: auto; }
+  @media only screen and (min-width: 1024px) {
+    #team {
+      padding: 90px 25px; }
+      #team .section-title {
+        font-size: 3rem;
+        margin-bottom: 60px; }
+      #team .team-members--person {
+        width: calc(100% / 5);
+        padding: 15px;
+        margin-bottom: 60px; } }
