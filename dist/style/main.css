@@ -248,6 +248,14 @@ section {
         color: white;
         margin-top: 25px;
         justify-self: flex-end; }
+    #banners .banners-content #mentor-todos img {
+      max-width: 300px; }
+    #banners .banners-content #mentor-todos .mentor-content {
+      padding-left: 0;
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+      padding: 25px; }
   @media only screen and (max-width: 819px) {
     #banners .banners-control {
       padding-left: 0; }
@@ -288,7 +296,15 @@ section {
         #banners .banners-content .mentor-content .mentor-description span {
           display: block; }
           #banners .banners-content .mentor-content .mentor-description span.hidden-mobile {
-            display: none; } }
+            display: none; }
+    #banners .banners-content #mentor-todos img {
+      max-width: 300px; }
+    #banners .banners-content #mentor-todos .mentor-content {
+      padding-left: 0;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 25px; } }
 
 /*
 .site-header {

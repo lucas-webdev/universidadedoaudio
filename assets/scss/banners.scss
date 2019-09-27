@@ -57,8 +57,10 @@
         height: 100%;
       }
     }
+
     .mentor-content {
       padding-left: 50%;
+      
       .mentor-name {
         font-size: 7rem;
         color: white;
@@ -76,7 +78,21 @@
         justify-self: flex-end;
       }
     }
+    
+    #mentor-todos {
+      img {
+        max-width: 300px;
+      }
+      .mentor-content {
+        padding-left: 0;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 25px;
+      }
+    }
   }
+
   @include mq('tablet', max) {
     .banners-control {
       padding-left: 0;
@@ -88,9 +104,11 @@
           background-position: center;
         }
       }
+
       .mentor-banner-content {
         align-items: flex-end;
       }
+
       .mentor-content {
         padding-left: 0;
         text-align: right;
@@ -107,6 +125,19 @@
               display: none;
             }
           }
+        }
+      }
+
+      #mentor-todos {
+        img {
+          max-width: 300px;
+        }
+        .mentor-content {
+          padding-left: 0;
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+          padding: 25px;
         }
       }
     }
