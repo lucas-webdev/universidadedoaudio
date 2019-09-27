@@ -41,17 +41,17 @@
 
   @include mq('desktop-small') {
     padding: $sectionPaddingDesktop 40px;
-    height: 60vh;
+    height: auto;
 
     .carousel {
       .carousel-inner {
         .carousel-item {
           .carousel-text {
             h5 {
-              font-size: 2.5rem;
+              font-size: 2rem;
             }
             p {
-              font-size: 3rem;
+              font-size: 2.5rem;
               width: 60%;
               margin: 25px auto;
             }

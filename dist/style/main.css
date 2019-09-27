@@ -458,21 +458,16 @@ section {
     color: #09326a; }
   #exclusiveContent .videos-wrapper .list-inline li {
     position: relative; }
-    #exclusiveContent .videos-wrapper .list-inline li svg {
-      position: absolute;
-      left: 50%;
-      margin-left: -15px;
-      font-size: 6rem;
-      top: 70px;
-      color: white;
-      width: 30px;
-      opacity: 1;
-      z-index: 11; }
     #exclusiveContent .videos-wrapper .list-inline li .video-content {
       margin: 15px auto;
       max-width: 320px; }
       #exclusiveContent .videos-wrapper .list-inline li .video-content iframe {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
+      #exclusiveContent .videos-wrapper .list-inline li .video-content img {
+        height: auto;
+        width: auto;
+        max-width: 100%; }
       #exclusiveContent .videos-wrapper .list-inline li .video-content--blocked {
         pointer-events: none;
         touch-action: none;
@@ -538,11 +533,11 @@ section {
   @media only screen and (min-width: 1024px) {
     #testimonials {
       padding: 90px 40px;
-      height: 60vh; }
+      height: auto; }
       #testimonials .carousel .carousel-inner .carousel-item .carousel-text h5 {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
       #testimonials .carousel .carousel-inner .carousel-item .carousel-text p {
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: 60%;
         margin: 25px auto; }
       #testimonials .carousel .carousel-inner .carousel-item img {
