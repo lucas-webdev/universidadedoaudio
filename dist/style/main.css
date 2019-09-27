@@ -210,37 +210,29 @@ section {
       align-items: flex-start;
       justify-content: center; }
     #banners .banners-content #mentor-todos {
-      background-image: url("../images/banners/todos.png"); }
-      #banners .banners-content #mentor-todos.active {
-        left: calc(-100% * 0); }
+      background-image: url("../images/banners/todos.png");
+      height: 100%; }
     #banners .banners-content #mentor-Beto-Neves {
-      background-image: url("../images/banners/Beto-Neves.png"); }
-      #banners .banners-content #mentor-Beto-Neves.active {
-        left: calc(-100% * 1); }
+      background-image: url("../images/banners/Beto-Neves.png");
+      height: 100%; }
     #banners .banners-content #mentor-Carlos-Freitas {
-      background-image: url("../images/banners/Carlos-Freitas.png"); }
-      #banners .banners-content #mentor-Carlos-Freitas.active {
-        left: calc(-100% * 2); }
+      background-image: url("../images/banners/Carlos-Freitas.png");
+      height: 100%; }
     #banners .banners-content #mentor-Cesar-Santos {
-      background-image: url("../images/banners/Cesar-Santos.png"); }
-      #banners .banners-content #mentor-Cesar-Santos.active {
-        left: calc(-100% * 3); }
+      background-image: url("../images/banners/Cesar-Santos.png");
+      height: 100%; }
     #banners .banners-content #mentor-Conrado-Ruther {
-      background-image: url("../images/banners/Conrado-Ruther.png"); }
-      #banners .banners-content #mentor-Conrado-Ruther.active {
-        left: calc(-100% * 4); }
+      background-image: url("../images/banners/Conrado-Ruther.png");
+      height: 100%; }
     #banners .banners-content #mentor-Cris-Simoes {
-      background-image: url("../images/banners/Cris-Simoes.png"); }
-      #banners .banners-content #mentor-Cris-Simoes.active {
-        left: calc(-100% * 5); }
+      background-image: url("../images/banners/Cris-Simoes.png");
+      height: 100%; }
     #banners .banners-content #mentor-Paulo-Anhaia {
-      background-image: url("../images/banners/Paulo-Anhaia.png"); }
-      #banners .banners-content #mentor-Paulo-Anhaia.active {
-        left: calc(-100% * 6); }
+      background-image: url("../images/banners/Paulo-Anhaia.png");
+      height: 100%; }
     #banners .banners-content #mentor-Pedro-Peixoto {
-      background-image: url("../images/banners/Pedro-Peixoto.png"); }
-      #banners .banners-content #mentor-Pedro-Peixoto.active {
-        left: calc(-100% * 7); }
+      background-image: url("../images/banners/Pedro-Peixoto.png");
+      height: 100%; }
     #banners .banners-content .mentor-content {
       padding-left: 50%; }
       #banners .banners-content .mentor-content .mentor-name {

@@ -54,9 +54,7 @@
 
       #mentor-#{$name} {
         background-image: url('../images/banners/#{$name}.png');
-        &.active {
-          left: calc(-100% * #{$i - 1});
-        }
+        height: 100%;
       }
     }
     .mentor-content {
