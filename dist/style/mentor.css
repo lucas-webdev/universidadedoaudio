@@ -1,0 +1,214 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif !important;
+  font-size: 10px;
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  background-image: url('../images/BG-mentores.png');
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.jumbotron iframe {
+  width: 500px;
+  height: 285px;
+  margin-bottom: 20px;
+}
+
+.mentor-name {
+  color: white;
+  border-bottom: 2px solid #ccad8e;
+  width: 300px;
+  margin: 0 auto 10px;
+  font-size: 4rem;
+}
+
+.mentor-description {
+  color: #6e6e6e;
+  font-size: 1.2rem;
+}
+
+.mentor-box-description {
+  background-color: #eaeaea;
+  position: relative;
+  height: 150px;
+  bottom: -75px;
+  padding: 0;
+}
+
+.mentor-box-description .card {
+  border: 0;
+  height: 100%;
+  border-top: 5px solid #ccad8e;
+  width: 100%;
+}
+
+
+.mentor-box-description .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  background-color: #eaeaea;
+  color: #6e6e6e;
+  font-weight: bold;
+  padding: 0 60px;
+  line-height: 2.2rem;
+  letter-spacing: 0.6rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.top-views {
+  padding-bottom: 35px;
+}
+
+.top-views .title {
+  font-size: 3rem;
+  color: #09326a;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#carouselTopViews .carousel-item iframe, #carouselTopViews .carousel-item img {
+  max-width: 20%;
+  width: 20%;
+  margin: 0 10px;
+}
+
+#carouselTopViews .carousel-item iframe {
+  width: 20%;
+  height: 125px;
+}
+
+#carouselTopViews .carousel-item .carousel-item--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aprender {
+  background-image: url('../images/bg-o-que-e.png');
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.aprender .title {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#accordionAprender {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#accordionAprender .card-header {
+  text-align: left;
+}
+
+#accordionAprender .card-header .btn-link {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #09326a;
+}
+
+#accordionAprender .card-body ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  color: #6e6e6e;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#accordionAprender .card-body ul li {
+  margin-bottom: 10px;
+}
+
+#accordionAprender .card-body ul li:last-child {
+  margin-bottom: 0;
+}
+
+.pagina-inicial {
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.pagina-inicial a { color: #09326a; }
+.pagina-inicial a:hover { text-decoration: none; }
+.pagina-inicial svg { color: #ccad8e; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2304080e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  left: -130px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2304080e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next { right: -130px; }
+.carousel-control-prev { left: -130px; }
+
+@media screen and (max-width: 860px) {
+  .jumbotron iframe {
+    width: 300px;
+    height: 185px;
+    margin-bottom: 20px;
+  }
+
+  .mentor-box-description {
+    width: 90%;
+  }
+
+  .mentor-box-description .card .card-body {
+    padding: 5px 10px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  #carouselTopViews .carousel-item .carousel-item--content {
+    flex-direction: column;
+  }
+
+  #carouselTopViews .carousel-item iframe {
+    height: 170px;
+  }
+
+  #carouselTopViews .carousel-item iframe, 
+  #carouselTopViews .carousel-item img {
+    width: 300px;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  #accordionAprender {
+    width: 95%;
+  }
+  #accordionAprender .card-header .btn-link {
+    font-size: 1.5rem;
+  }
+  #accordionAprender .card-body ul li {
+    font-size: 1.4rem;
+  }
+}
