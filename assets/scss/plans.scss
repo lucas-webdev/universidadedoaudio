@@ -58,6 +58,8 @@
   }
 
   @include mq('desktop-small') {
+    padding: $sectionPaddingDesktop 0;
+    
     .container {
       @include flexbox(row, flex-start, space-around);
       height: 450px;

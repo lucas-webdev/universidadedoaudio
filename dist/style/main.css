@@ -5,7 +5,8 @@ html, body {
   height: 100%;
   background-color: white;
   font-family: 'Dosis', sans-serif !important;
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none; }
@@ -18,11 +19,11 @@ section {
 .section-title {
   color: white;
   font-size: 2rem;
-  letter-spacing: 0.4rem; }
+  letter-spacing: 0.5rem; }
 
 .section-subtitle {
   font-size: 1.2rem;
-  letter-spacing: 0.4rem; }
+  letter-spacing: 0.5rem; }
 
 .default-button {
   color: #ccad8e;
@@ -30,7 +31,8 @@ section {
   padding: 5px 10px;
   font-size: 2rem; }
   .default-button:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ccad8e; }
 
 .secondary-button {
   color: #09326a;
@@ -79,7 +81,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-around; }
     #main-menu ul li {
       position: relative;
       height: 80px;
@@ -91,11 +93,13 @@ section {
         border-bottom: 1px solid #ccad8e; }
       #main-menu ul li.sign-now {
         border: 2px solid #ccad8e;
-        padding: 6px;
+        padding: 20px;
         height: 30px; }
         #main-menu ul li.sign-now:hover {
           border-bottom-width: 2px;
           background-color: rgba(255, 255, 255, 0.1); }
+          #main-menu ul li.sign-now:hover a {
+            border: 0; }
       #main-menu ul li a {
         color: white;
         text-decoration: none; }
@@ -189,12 +193,7 @@ section {
         border-bottom: 2px solid white; }
   #banners .banners-content {
     height: calc(100vh - 80px);
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
+    width: 100%; }
     #banners .banners-content > div {
       width: 100%;
       height: 100%; }
@@ -254,8 +253,14 @@ section {
       padding-left: 0;
       text-align: center;
       width: 60%;
-      margin: 0 auto;
+      margin: 90px auto 0;
       padding: 25px; }
+  #banners .carousel-indicators {
+    bottom: 20px; }
+    #banners .carousel-indicators li {
+      height: 6px;
+      width: 40px;
+      margin: 0 5px; }
   @media only screen and (max-width: 819px) {
     #banners .banners-control {
       padding-left: 0; }
@@ -338,12 +343,13 @@ section {
   #ctaSign .ctaSign--button {
     margin-top: 40px;
     display: block;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem; }
   @media only screen and (min-width: 1024px) {
     #ctaSign {
       padding: 90px 25px; }
       #ctaSign .ctaSign__texto--title {
-        font-size: 2.5rem; }
+        font-size: 3.2rem; }
       #ctaSign .ctaSign__texto--subtitle {
         font-size: 1.5rem; }
       #ctaSign .ctaSign--button {
@@ -447,7 +453,7 @@ section {
             margin-bottom: 10px; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress {
             width: 70%;
-            margin: 30px auto; }
+            margin: 20px auto; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.nao-sabe span, #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.sabe-mas-nao-sabe span, #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress-bar.acha-que-sabe span {
             font-size: 1.6rem;
             top: 35px; }
@@ -584,7 +590,7 @@ section {
     #plans .card .card-header {
       font-size: 1.6rem;
       color: #09326a;
-      letter-spacing: 0.4rem;
+      letter-spacing: 0.5rem;
       text-align: center;
       font-weight: bold; }
       #plans .card .card-header--mensal {
@@ -606,33 +612,35 @@ section {
         font-size: 1.4rem;
         margin-bottom: 10px; }
   @media only screen and (min-width: 1024px) {
-    #plans .container {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-around;
-      height: 450px; }
-      #plans .container .card {
-        width: 45%;
-        height: 100%;
-        position: relative; }
-        #plans .container .card:first-child .card-text {
-          margin-top: 30px; }
-        #plans .container .card .card-header {
-          font-size: 2.5rem; }
-        #plans .container .card .card-text {
-          font-size: 2.2rem; }
-          #plans .container .card .card-text li {
-            margin-bottom: 15px; }
-        #plans .container .card .btn {
-          position: absolute;
-          bottom: 30px;
-          left: 0;
-          right: 0;
-          display: block;
-          width: 220px;
-          margin: auto;
-          font-size: 2.2rem; } }
+    #plans {
+      padding: 90px 0; }
+      #plans .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 450px; }
+        #plans .container .card {
+          width: 45%;
+          height: 100%;
+          position: relative; }
+          #plans .container .card:first-child .card-text {
+            margin-top: 30px; }
+          #plans .container .card .card-header {
+            font-size: 2.5rem; }
+          #plans .container .card .card-text {
+            font-size: 2.2rem; }
+            #plans .container .card .card-text li {
+              margin-bottom: 15px; }
+          #plans .container .card .btn {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 220px;
+            margin: auto;
+            font-size: 2.2rem; } }
 
 /*
 .site-header {
@@ -684,7 +692,11 @@ section {
         #team .team-members--person .overlay-member .mentor-name {
           font-size: 1.8rem;
           color: #ccad8e;
-          font-weight: bold; }
+          font-weight: bold;
+          margin-bottom: 10px; }
+        #team .team-members--person .overlay-member .mentor-text {
+          font-size: 1.5rem;
+          margin-bottom: 45px; }
       #team .team-members--person:hover .overlay-member {
         opacity: 1; }
       #team .team-members--person img {

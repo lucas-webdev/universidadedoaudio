@@ -19,8 +19,6 @@
     @include flexbox(row, center, space-around);
     flex-wrap: wrap;
 
-    
-    
     &--person {
       width: 40%;
       margin-bottom: 20px;
@@ -41,6 +39,12 @@
           font-size: 1.8rem;
           color: $primaryBeige;
           font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .mentor-text {
+          font-size: 1.5rem;
+          margin-bottom: 45px;
         }
 
       }

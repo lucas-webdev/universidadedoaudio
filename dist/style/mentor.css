@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Dosis', sans-serif !important;
@@ -17,8 +18,8 @@ html, body {
 }
 
 .jumbotron iframe {
-  width: 500px;
-  height: 285px;
+  width: 800px;
+  height: 485px;
   margin-bottom: 20px;
 }
 
@@ -32,7 +33,7 @@ html, body {
 
 .mentor-description {
   color: #6e6e6e;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .mentor-box-description {
@@ -66,7 +67,7 @@ html, body {
 }
 
 .top-views {
-  padding-bottom: 35px;
+  padding-bottom: 90px;
 }
 
 .top-views .title {
@@ -102,7 +103,7 @@ html, body {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding: 35px 0;
+  padding: 90px 0;
   text-align: center;
 }
 
@@ -110,7 +111,7 @@ html, body {
   text-align: center;
   color: white;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 #accordionAprender {
@@ -146,12 +147,13 @@ html, body {
 }
 
 .pagina-inicial {
-  height: 100px;
+  height: auto;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  padding: 45px 0;
 }
 
 .pagina-inicial a { color: #09326a; }

@@ -30,7 +30,7 @@
     width: 100%;
     padding-left: 0;
     color: white;
-    @include flexbox(row, center, space-between);
+    @include flexbox(row, center, space-around);
 
     li {
       position: relative;
@@ -42,16 +42,22 @@
           border-bottom: 1px solid $primaryBeige; 
         }
       }
+      
       &.sign-now {
         border: 2px solid $primaryBeige;
-        padding: 6px;
+        padding: 20px;
         height: 30px;
 
         &:hover {
           border-bottom-width: 2px;
           background-color: rgba(255,255,255,0.1);
+
+          a {
+            border: 0;
+          }
         }
       }
+
       a {
         color: white;
         text-decoration: none;
