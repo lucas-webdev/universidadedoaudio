@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: 'Dosis', sans-serif !important;
+  font-family: "Dosis", sans-serif !important;
   font-size: 10px;
 }
 
@@ -66,8 +67,25 @@ ul.navbar-nav {
 }
 
 .sign-btn:hover {
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+#navbarNav {
+  background: black;
+  position: relative;
+  left: 60px;
+  text-align: right;
+  padding-right: 25px;
+  top: 15px;
+}
+
+#navbarNav li {
+  margin: 20px 0;
+}
+
+.navbar-toggler {
+  border: 1px solid #ccad8e;
 }
 
 .jumbotron {
