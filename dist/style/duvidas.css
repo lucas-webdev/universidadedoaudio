@@ -1,0 +1,90 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Dosis', sans-serif !important;
+  font-size: 10px;
+}
+
+body {
+  padding: 80px 0 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#main-menu {
+  height: 80px;
+  background-color: #04080e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#main-menu .navbar-brand {
+  height: 60px;
+}
+
+#main-menu .navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+ul.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.link-voltar {
+  margin-right: 25px;
+}
+
+.link-voltar {
+  color: #ccad8e;
+}
+
+.link-voltar span {
+  color: white;
+}
+
+.link-voltar a:hover span,
+.link-voltar a:hover {
+  color: #ccad8e;
+}
+
+.sign-btn {
+  border: 2px solid #ccad8e;
+  padding: 10px;
+}
+
+.sign-btn:hover {
+  background-color: rgba(255,255,255,.1);
+  color: white;
+}
+
+.jumbotron {
+  height: calc(100vh - 80px);
+}
+
+#accordionDuvidas {
+  padding: 45px 0;
+  min-height: 50vh;
+}
+
+#accordionDuvidas button {
+  font-size: 2rem;
+  color: #09326a;
+}
+
+#accordionDuvidas .card-body {
+  font-size: 1.6rem;
+  color: #6e6e6e;
+}
