@@ -71,13 +71,15 @@ ul.navbar-nav {
   color: white;
 }
 
-#navbarNav {
-  background: black;
-  position: relative;
-  left: 60px;
-  text-align: right;
-  padding-right: 25px;
-  top: 15px;
+@media screen and (max-width: 860px) {
+  #navbarNav {
+    background: black;
+    position: relative;
+    left: 60px;
+    text-align: right;
+    padding-right: 25px;
+    top: 15px;
+  }
 }
 
 #navbarNav li {
@@ -90,6 +92,16 @@ ul.navbar-nav {
 
 .jumbotron {
   height: calc(100vh - 80px);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  background-image: url('../images/BG-mentores.png');
+  text-align: center;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #accordionDuvidas {

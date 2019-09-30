@@ -26,6 +26,18 @@
       }
     }
   }
+
+  @for $i from 1 through length($mentors) {
+    $name: nth($mentors, $i);
+
+    #mentor-#{$name} {
+      background-image: url('../images/banners/#{$name}.png');
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: cover;
+    }
+  }
   
   .banners-content {
     height: calc(100vh - 80px);
@@ -37,22 +49,10 @@
     }
     
     .mentor-banner-content {
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
       flex-shrink: 0;
       position: relative;
-      transition: left 1s ease-in-out;
+      height: 100%;
       @include flexbox(column, flex-start, center);
-    }
-
-    @for $i from 1 through length($mentors) {
-      $name: nth($mentors, $i);
-
-      #mentor-#{$name} {
-        background-image: url('../images/banners/#{$name}.png');
-        height: 100%;
-      }
     }
 
     .mentor-content {
@@ -103,13 +103,15 @@
     .banners-control {
       padding-left: 0;
     }
-    .banners-content {
-      @each $name in $mentors {
-        #mentor-#{$name} {
-          background-image: url('../images/banners/#{$name}-MOBILE.png');
-          background-position: center;
-        }
+    
+    @each $name in $mentors {
+      #mentor-#{$name} {
+        background-image: url('../images/banners/#{$name}-MOBILE.png');
+        background-position: center;
       }
+    }
+    
+    .banners-content {
 
       .mentor-banner-content {
         align-items: flex-end;
@@ -123,6 +125,7 @@
         .mentor-name {
           font-size: 2rem;
         }
+        
         .mentor-description {
           font-size: 1.5rem;
           span {

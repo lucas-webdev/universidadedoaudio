@@ -41,7 +41,7 @@
 
   @include mq('desktop-small') {
     padding: $sectionPaddingDesktop 40px;
-    height: auto;
+    height: calc(100vh - 80px);
 
     .carousel {
       .carousel-inner {

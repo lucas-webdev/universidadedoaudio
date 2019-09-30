@@ -191,6 +191,66 @@ section {
         width: 100%;
         height: 5px;
         border-bottom: 2px solid white; }
+  #banners #mentor-todos {
+    background-image: url("../images/banners/todos.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Arthur-Damasio {
+    background-image: url("../images/banners/Arthur-Damasio.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Bruno-Barros {
+    background-image: url("../images/banners/Bruno-Barros.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Beto-Neves {
+    background-image: url("../images/banners/Beto-Neves.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Carlos-Freitas {
+    background-image: url("../images/banners/Carlos-Freitas.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Cesar-Santos {
+    background-image: url("../images/banners/Cesar-Santos.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Conrado-Ruther {
+    background-image: url("../images/banners/Conrado-Ruther.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Cris-Simoes {
+    background-image: url("../images/banners/Cris-Simoes.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Paulo-Anhaia {
+    background-image: url("../images/banners/Paulo-Anhaia.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
+  #banners #mentor-Pedro-Peixoto {
+    background-image: url("../images/banners/Pedro-Peixoto.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; }
   #banners .banners-content {
     height: calc(100vh - 80px);
     width: 100%; }
@@ -198,40 +258,13 @@ section {
       width: 100%;
       height: 100%; }
     #banners .banners-content .mentor-banner-content {
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: cover;
       flex-shrink: 0;
       position: relative;
-      transition: left 1s ease-in-out;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; }
-    #banners .banners-content #mentor-todos {
-      background-image: url("../images/banners/todos.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Beto-Neves {
-      background-image: url("../images/banners/Beto-Neves.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Carlos-Freitas {
-      background-image: url("../images/banners/Carlos-Freitas.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Cesar-Santos {
-      background-image: url("../images/banners/Cesar-Santos.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Conrado-Ruther {
-      background-image: url("../images/banners/Conrado-Ruther.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Cris-Simoes {
-      background-image: url("../images/banners/Cris-Simoes.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Paulo-Anhaia {
-      background-image: url("../images/banners/Paulo-Anhaia.png");
-      height: 100%; }
-    #banners .banners-content #mentor-Pedro-Peixoto {
-      background-image: url("../images/banners/Pedro-Peixoto.png");
-      height: 100%; }
     #banners .banners-content .mentor-content {
       padding-left: 50%; }
       #banners .banners-content .mentor-content .mentor-name {
@@ -264,28 +297,34 @@ section {
   @media only screen and (max-width: 819px) {
     #banners .banners-control {
       padding-left: 0; }
-    #banners .banners-content #mentor-todos {
+    #banners #mentor-todos {
       background-image: url("../images/banners/todos-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Beto-Neves {
+    #banners #mentor-Arthur-Damasio {
+      background-image: url("../images/banners/Arthur-Damasio-MOBILE.png");
+      background-position: center; }
+    #banners #mentor-Bruno-Barros {
+      background-image: url("../images/banners/Bruno-Barros-MOBILE.png");
+      background-position: center; }
+    #banners #mentor-Beto-Neves {
       background-image: url("../images/banners/Beto-Neves-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Carlos-Freitas {
+    #banners #mentor-Carlos-Freitas {
       background-image: url("../images/banners/Carlos-Freitas-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Cesar-Santos {
+    #banners #mentor-Cesar-Santos {
       background-image: url("../images/banners/Cesar-Santos-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Conrado-Ruther {
+    #banners #mentor-Conrado-Ruther {
       background-image: url("../images/banners/Conrado-Ruther-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Cris-Simoes {
+    #banners #mentor-Cris-Simoes {
       background-image: url("../images/banners/Cris-Simoes-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Paulo-Anhaia {
+    #banners #mentor-Paulo-Anhaia {
       background-image: url("../images/banners/Paulo-Anhaia-MOBILE.png");
       background-position: center; }
-    #banners .banners-content #mentor-Pedro-Peixoto {
+    #banners #mentor-Pedro-Peixoto {
       background-image: url("../images/banners/Pedro-Peixoto-MOBILE.png");
       background-position: center; }
     #banners .banners-content .mentor-banner-content {
@@ -449,8 +488,9 @@ section {
           align-items: center;
           justify-content: center; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress > span {
-            font-size: 2.2rem;
-            margin-bottom: 10px; }
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+            padding: 0 25px; }
           #what .progress-bar-wrapper .progress-bar-content .indicado-progress .progress {
             width: 70%;
             margin: 20px auto; }
@@ -555,7 +595,7 @@ section {
   @media only screen and (min-width: 1024px) {
     #testimonials {
       padding: 90px 40px;
-      height: auto; }
+      height: calc(100vh - 80px); }
       #testimonials .carousel .carousel-inner .carousel-item .carousel-text h5 {
         font-size: 2rem; }
       #testimonials .carousel .carousel-inner .carousel-item .carousel-text p {
