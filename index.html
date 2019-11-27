@@ -1,19 +1,787 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Base template</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-  </head>
-  
-  <body>
-    <section id="first_section">
-      Base template
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.4/cash.min.js"></script>
-    <script type="text/javascript" src="dist/bundle.js"></script>
-</body>
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="//paginas.rocks/Content/capture/forms/formCustom.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149852016-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-149852016-1');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universidade do Áudio</title>
+
+  <meta name="description" content="A primeira plataforma online sobre Engenharia de Áudio e Produção Musical do Brasil" />
+
+  <meta property="og:description" content="A primeira plataforma online sobre Engenharia de Áudio e Produção Musical do Brasil" />
+  <meta property="og:url" content="https://www.universidadedoaudio.com">
+  <meta property="og:title" content="Universidade do Audio - Aprenda com os melhores profissionais de áudio do Brasil">
+  <meta property="og:image" itemprop="image" content="https://www.universidadedoaudio.com/dist/images/banners/todos-MOBILE.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="360" />
+  <meta property="og:image:height" content="451" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="./dist/style/main.css" />
+
+  </head>
+
+  <body>
+
+    <!-- menu -->
+    <nav id="main-menu">
+      <div class="ua-logo">
+        <a href="#banners"><img src="./dist/images/ua-logo.png" ></a>
+
+      </div>
+      <input class="mobile-menu-trigger" type="checkbox" id="collapse-menu">
+      <label class="mobile-menu-trigger" for="collapse-menu">&#9776;</label>
+      <a class="btn btn-success btn-lg d-block d-sm-none btn-assine-agora-mobile" href="https://pay.hotmart.com/E15715814G?off=vo0kdgtx&checkoutMode=10">7 DIAS GRÁTIS</a>
+      <div class="menu-content">
+        <ul>
+          <li><a href="#what">O QUE É A UA</a></li>
+          <li><a href="#plans">PLANOS</a></li>
+          <li><a href="https://universidadedoaudio.com/duvidas.html">DÚVIDAS</a></li>
+          <li class="student">
+            ÁREA DO ALUNO
+            <ul class="submenu--alunos">
+              <li>
+                <a href="https://universidadedoaudio.club.hotmart.com/login" target="_blank">LOGIN</a>
+              </li>
+              <hr/>
+              <li>
+                <a href="https://universidadedoaudio.com/provas.html">PROVAS</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#llCaptureForm">CONTATO</a></li>
+          <li><a href="https://universidadedoaudio.com/blog/">BLOG</a></li>
+          <li>
+            <a class="btn btn-primary btn-lg btn-7-dias" href="#plans">ASSINE AGORA</a>
+          </li>
+          <li>
+            <a class="btn btn-success btn-lg d-none d-sm-block btn-assine" href="https://pay.hotmart.com/E15715814G?off=vo0kdgtx&checkoutMode=10">7 DIAS GRÁTIS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- banners -->
+    <section id="banners">
+      <div id="carouselMentores" class="carousel slide banners-content" data-ride="carousel">
+        <!-- INDICADORES -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselMentores" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselMentores" data-slide-to="1"></li>
+          <li data-target="#carouselMentores" data-slide-to="2"></li>
+          <li data-target="#carouselMentores" data-slide-to="3"></li>
+          <li data-target="#carouselMentores" data-slide-to="4"></li>
+          <li data-target="#carouselMentores" data-slide-to="5"></li>
+          <li data-target="#carouselMentores" data-slide-to="6"></li>
+          <li data-target="#carouselMentores" data-slide-to="7"></li>
+          <li data-target="#carouselMentores" data-slide-to="8"></li>
+          <li data-target="#carouselMentores" data-slide-to="9"></li>
+        </ol>
+        <!-- ./INDICADORES -->
+
+        <div class="carousel-inner banners-content">
+          <!-- TODOS -->
+          <div class="carousel-item active" id="mentor-todos">
+            <div class="mentor-banner-content" >
+              <div class="mentor-content">
+                <div class="ua-logo">
+                  <img src="./dist/images/ua-logo-banner.png">
+                </div>
+                <div class="mentor-name">UNIVERSIDADE DO ÁUDIO</div>
+                <div class="mentor-description" style="color: white">APRENDA COM OS MELHORES PROFISSIONAIS DE ÁUDIO E PRODUÇÃO MUSICAL DO BRASIL</div>
+              </div>
+            </div>
+          </div>
+          <!-- TODOS -->
+
+          <!-- CESAR SANTOS -->
+          <div class="carousel-item" id="mentor-Cesar-Santos">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">CESAR SANTOS</div>
+                <div class="mentor-description">
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/cesar-santos.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CESAR SANTOS -->
+
+          <!-- CRIS SIMÕES -->
+          <div class="carousel-item" id="mentor-Cris-Simoes">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">CRIS SIMÕES</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/cris-simoes.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CRIS SIMÕES -->
+
+          <!-- PEDRO PEIXOTO -->
+          <div class="carousel-item" id="mentor-Pedro-Peixoto">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">PEDRO PEIXOTO</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/pedro-peixoto.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PEDRO PEIXOTO -->
+
+          <!-- BRUNO BARROS -->
+          <div class="carousel-item" id="mentor-Bruno-Barros">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">BRUNO BARROS</div>
+                <div class="mentor-description">
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/bruno-barros.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BRUNO BARROS -->
+
+          <!-- ARTHUR DAMÁSIO -->
+          <div class="carousel-item" id="mentor-Arthur-Damasio">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">ARTHUR DAMÁSIO</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/arthur-damasio.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ARTHUR DAMÁSIO -->
+
+          <!-- PAULO ANHAIA -->
+          <div class="carousel-item" id="mentor-Paulo-Anhaia">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">PAULO ANHAIA</div>
+                <div class="mentor-description">
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/paulo-anhaia.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PAULO ANHAIA -->
+
+          <!-- CONRADO RUTHER -->
+          <div class="carousel-item" id="mentor-Conrado-Ruther">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">CONRADO RUTHER</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/conrado-ruther.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CONRADO RUTHER -->
+
+
+          <!-- BETO NEVES -->
+          <div class="carousel-item" id="mentor-Beto-Neves">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">BETO NEVES</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>MENTOR</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/beto-neves.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BETO NEVES -->
+
+          <!-- CARLOS FREITAS -->
+          <div class="carousel-item" id="mentor-Carlos-Freitas">
+            <div class="mentor-banner-content">
+              <div class="mentor-content">
+                <div class="mentor-name">CARLOS FREITAS</div>
+                <div class="mentor-description">
+
+                  <span class="hidden-mobile"></span>
+                  <span>CONVIDADO</span>
+                </div>
+                <div class="mentor-btn">
+                  <a class="default-button" href="https://universidadedoaudio.com/carlos-freitas.html">VER PERFIL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARLOS FREITAS -->
+        </div>
+
+        <!-- SETAS -->
+        <a class="carousel-control-prev" href="#carouselMentores" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselMentores" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!-- ./SETAS -->
+      </div>
+    </section>
+    <!-- cta -->
+    <section id="ctaSign">
+      <div class="ctaSign__texto">
+        <div class="ctaSign__texto--title">
+          JÁ SONHOU EM VIVER DE MÚSICA ?
+        </div>
+        <div class="ctaSign__texto--subtitle">
+          <b>TORNE-SE UM PROFISSIONAL DA ENGENHARIA DE ÁUDIO E PRODUÇÃO MUSICAL!</b>
+        </div>
+      </div>
+      <a class="ctaSign--button btn btn-primary" href="#plans" >ASSINE AGORA POR R$39,99/MÊS + taxa do cartão</a>
+    </section>
+    <!-- o que é -->
+    <section id="what">
+      <div class="video-wrapper">
+        <div class="section-title">
+          O QUE É A UNIVERSIDADE DO ÁUDIO?
+        </div>
+        <div class="section-subtitle">
+          A PRIMEIRA PLATAFORMA ONLINE SOBRE ENGENHARIA DE ÁUDIO E PRODUÇÃO MUSICAL DO BRASIL
+        </div>
+        <div class="video-content">
+          <iframe width="320" height="200" src="https://youtube.com/embed/k2dBbdF3IAc" frameBorder="0">Browser not compatible.</iframe>
+        </div>
+      </div>
+      <div class="progress-bar-wrapper">
+        <div class="section-title"><span>INDICADO PARA VOCÊ:</span></div>
+        <div class="progress-bar-content">
+          <div class="indicado-progress indicado-progress--nao-sabe">
+            <span class="progress-bar-title">INICIANTE</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated nao-sabe" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span class="progress-bar-desc">que quer aprender desde o zero sobre produção musical e áudio</span>
+          </div>
+          <div class="indicado-progress indicado-progress--sabe-nao-sabe">
+            <span class="progress-bar-title">INTERMEDIÁRIO</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated sabe-mas-nao-sabe" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span class="progress-bar-desc">que quer dar o próximo passo na carreira como engenheiro de áudio e produtor musical</span>
+          </div>
+          <div class="indicado-progress indicado-progress--acha-que-sabe">
+            <span class="progress-bar-title">AVANÇADO</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated acha-que-sabe" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span class="progress-bar-desc">que é profissional da música e sabe que na nossa profissão deve-se estar atualizado sempre</span>
+          </div>
+        </div>
+        <!-- 14:38 -->
+        <div class="counter-wrapper">
+          <div class="horas-aula">
+            <span>+</span>
+            <div class="counter counter-horas" data-count="50">20</div>
+            <div class="counter-text">HORAS DE AULA <br /> ONLINE E CRESCENDO</div>
+          </div>
+          <div class="alunos">
+            <span>+</span>
+            <div class="counter counter-alunos" data-count="1200">800</div>
+            <div class="counter-text">ALUNOS TRANSFORMADOS <br />PELA UA</div>
+          </div>
+          <div class="valor-diario">
+            <span>R$</span>
+            <div class="counter counter-valor" data-count="1.33">0.2</div>
+            <div class="counter-text">POR DIA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- conteúdo exclusivo -->
+    <section id="exclusiveContent">
+      <div class="section-title">
+        CONTEÚDO NOVO LANÇADO TODA SEMANA
+      </div>
+      <div class="section-subtitle">
+        COM OS MAIORES PROFISSIONAIS DA INDÚSTRIA FONOGRÁFICA DO BRASIL
+      </div>
+      <div class="videos-wrapper">
+        <ul class="list-inline">
+          <!-- VIDEOS -->
+          <li>
+            <div class="video-content">
+              <iframe allowtransparency="true" scrolling="no" width="320" height="auto" src="https://youtube.com/embed/-A2B2_bBVCw" frameBorder="0">Browser not compatible.</iframe>
+            </div>
+          </li>
+          <li>
+            <div class="video-content">
+              <iframe allowtransparency="true" scrolling="no" width="320" height="auto" src="https://youtube.com/embed/-A2B2_bBVCw" frameBorder="0">Browser not compatible.</iframe>
+            </div>
+          </li>
+          <li>
+            <div class="video-content">
+              <iframe allowtransparency="true" scrolling="no" width="320" height="auto" src="https://youtube.com/embed/-A2B2_bBVCw" frameBorder="0">Browser not compatible.</iframe>
+            </div>
+          </li>
+          <li>
+            <div class="video-content">
+              <iframe allowtransparency="true" scrolling="no" width="320" height="auto" src="https://youtube.com/embed/-A2B2_bBVCw" frameBorder="0">Browser not compatible.</iframe>
+            </div>
+          </li>
+        </ul>
+        <!-- THUMBS -->
+        <ul class="list-inline" style="margin-top: 40px">
+          <li>
+            <div class="overlay-video-bloqueado">
+              <div class="overlay-text">Para acessar o conteúdo completo</div>
+              <div class="overlay-text-link">
+                <a class="default-button" href="#plans">ASSINE AGORA</a>
+              </div>
+            </div>
+            <div class="video-content video-content--blocked">
+              <img class="locked-video" src="dist/images/desmixando_deixa_.png" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="overlay-video-bloqueado">
+              <div class="overlay-text">Para acessar o conteúdo completo</div>
+              <div class="overlay-text-link">
+                <a class="default-button" href="#plans">ASSINE AGORA</a>
+              </div>
+            </div>
+            <div class="video-content video-content--blocked">
+              <img class="locked-video" src="dist/images/desmixando_jotaquest_.png" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="overlay-video-bloqueado">
+              <div class="overlay-text">Para acessar o conteúdo completo</div>
+              <div class="overlay-text-link">
+                <a class="default-button" href="#plans">ASSINE AGORA</a>
+              </div>
+            </div>
+            <div class="video-content video-content--blocked">
+              <img class="locked-video" src="dist/images/protools.png" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="overlay-video-bloqueado">
+              <div class="overlay-text">Para acessar o conteúdo completo</div>
+              <div class="overlay-text-link">
+                <a class="default-button" href="#plans">ASSINE AGORA</a>
+              </div>
+            </div>
+            <div class="video-content video-content--blocked">
+              <img class="locked-video" src="dist/images/protools.png" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- depoimentos -->
+    <section id="testimonials">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <div class="section-title">
+          ALGUMAS VIDAS TRANSFORMADAS PELA
+          <span class="highlight">UA</span>
+        </div>
+        <div class="carousel-inner">
+          <!-- DEPOIMENTO 1 - JESSICA -->
+          <div class="carousel-item">
+            <img src="./dist/images/depoimentos/Jessica.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "Antes da UA eu estava com muitos projetos parados, muita música parada e sem saber o que fazer. Agora com as aulas, com o incentivo, foi bom pra eu organizar tudo e agora eu to produzindo muito. Produzo uma música por semana, assisto muito as aulas e ta sendo um super conhecimento pra mim."
+              </p>
+              <h5>Jéssica - Produtora musical e DJ</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 1 -->
+
+          <!-- DEPOIMENTO 2 - LEANDRO -->
+          <div class="carousel-item">
+            <img src="./dist/images/depoimentos/Leandro.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "A Universidade do Áudio chegou na minha vida pra dar uma guinada, musicalmente falando. Até então aos 30 eu não tinha perspectiva de nada em música, sempre toquei só em casa, com amigos e com banda mas nunca almejei nada além. E o Cesar Santos junto com toda a turma da UA veio pra me fazer enxergar mesmo um universo que eu até então não tinha noção. Muito obrigado UA e Sonastério e música ilumina."
+              </p>
+              <h5>Leandro - Músico</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 2 -->
+
+          <!-- DEPOIMENTO 3 - THIAGO -->
+          <div class="carousel-item">
+            <img src="./dist/images/depoimentos/Thiago.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "A UA me ajudou demais nos meus conhecimentos, desde o tratamento com o cliente até a parte de fluência do sinal, a parte prática e a parte técnica. Depois da UA eu descobri que muita coisa era falta de conhecimento técnico mesmo, na área, ao invés de equipamentos. Então me ajudou desde esse início até a parte de mixagem, pós-produção e a entrega do produto final"
+              </p>
+              <h5>Thiago Macedo - Aluno iniciante de Engenharia de Áudio</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 3 -->
+
+          <!-- DEPOIMENTO 4 - GUILHERME FIORE -->
+          <div class="carousel-item active">
+            <img src="./dist/images/depoimentos/Guilherme-Fiore.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "No começo, eu só gravava lixo pra mim mesmo, depois da Universidade do Áudio, tenho um CD produzido por mim, vários artistas vindo me procurar pela qualidade, e eu só tenho um home studio com Behringer. Então cara, mudou tudo na minha vida. A UA me ajudou a conseguir sustentar minha casa, a evoluir como ser humano principalmente, ética e moral, e isso não tem preço que pague."
+              </p>
+              <h5>Guilherme Fiore - Músico amador</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 4 -->
+
+          <!-- DEPOIMENTO 5 - GUILHERME AQUINO -->
+          <div class="carousel-item">
+            <img src="./dist/images/depoimentos/Guilherme-Aquino.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "Não conhecia esse ramo de manipulação do som, a Engenharia de Áudio. Ano passado vi uma publicação sobre a Universidade do Áudio, me interessei e desde então sou apaixonado por esta área, apesar de ser ainda bem iniciante. A didática do curso é sensacional! Parabéns a toda a equipe!"
+              </p>
+              <h5>Guilherme Aquino - Aluno iniciante de Engenharia de Áudio</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 5 -->
+
+          <!-- DEPOIMENTO 6 - ALEX FONSECA -->
+          <div class="carousel-item">
+            <img src="./dist/images/depoimentos/Alex-Fonseca.png" class="d-block" alt="...">
+            <div class="carousel-text">
+              <p>
+                "A primeira coisa que e a Universidade do Áudio me proporcionou foi inspiração, pois como pode uma plataforma tão rica e com profissionais tão alto nível, conseguir vender conhecimento por um preço tão justo e acessível a todos. Dentro deste quase um ano de plataforma eu aprimorei meus conhecimentos e inclusive, aprendi muita didática pra poder propagar e vender conhecimento também em cursos presenciais em minha cidade."
+              </p>
+              <h5>Alex Fonseca - Proprietário de Estúdio</h5>
+            </div>
+          </div>
+          <!-- FIM DEPOIMENTO 6 -->
+
+        </div>
+      </div>
+      <!-- SETAS -->
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+      <!-- ./SETAS -->
+    </section>
+    <!-- planos -->
+    <section id="plans">
+      <div class="section-title">ESCOLHA SEU PLANO</div>
+      <div class="container">
+
+        <div class="card">
+          <h5 class="card-header card-header--anual">ASSINATURA ANUAL</h5>
+          <div class="card-body">
+            <div class="card-text">
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Acesso ilimitado à plataforma
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Grupo exclusivo de Whatsapp e Facebook
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Preço exclusivo na compra do Pro Tools
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Conteúdo exclusivo
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Provas e certificados UA
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Descontos em produtos e Workshops
+                </li>
+              </ul>
+            </div>
+            <a href="https://pay.hotmart.com/E15715814G?off=wvumsaf0&checkoutMode=10&bid=1570059318234" class="btn btn-primary plans-btn">
+              <b>R$39,99</b>
+              <span>/MÊS</span>
+              <span>+ taxa do cartão</span>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header card-header--mensal">ASSINATURA MENSAL</h5>
+          <div class="card-body">
+            <div class="card-text">
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Acesso ilimitado à plataforma
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Grupo exclusivo de Whatsapp e Facebook
+                </li>
+                              </ul>
+            </div>
+            <a href="https://pay.hotmart.com/E15715814G?off=g9qycfsj&checkoutMode=10&bid=1570061647717" class="btn btn-primary plans-btn">
+              <b>R$59,99</b>
+              <span>/MÊS</span>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- equipe -->
+    <section id="team">
+      <div class="section-title">
+        EQUIPE UNIVERSIDADE DO ÁUDIO
+      </div>
+      <div class="team-members">
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">CÉSAR SANTOS</div>
+            <div class="mentor-text">Cesar é Produtor Musical, Engenheiro de Áudio e Músico formado na Berklee College of Music (Boston – MA, EUA). Ele foi o primeiro brasileiro a se formar com honra máxima na escola, no curso de Engenharia de Áudio e Produção Musical.</div>
+
+          </div>
+          <img src="./dist/images/equipe/cesinha.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">BRUNO BARROS</div>
+            <div class="mentor-text">Produtor Musical e Engenheiro de Áudio formado em Music Business e Engenharia de Áudio/Produção Musical em Los Angeles, na renomada faculdade de música contemporânea MI (Musicians Institute, Hollywood CA).</div>
+          </div>
+          <img src="./dist/images/equipe/bruno.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">ARTHUR DAMÁSIO</div>
+            <div class="mentor-text">Engenheiro de Áudio e Produtor Musical formado na Bituca - Universidade de Música Popular de Barbacena. É músico e faz da Música seu propósito de vida.</div>
+
+          </div>
+          <img src="./dist/images/equipe/arthur.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">FRED PEDROSA</div>
+            <div class="mentor-text">Engenheiro Eletricista formado pela UFMG, se especializou em Engenharia de Áudio e Produção Musical com grandes referências do mercado brasileiro. </div>
+
+          </div>
+          <img src="./dist/images/equipe/fred.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">JOÃO ANDRADE</div>
+            <div class="mentor-text">Graduado em Direito pela Faculdade Milton Campos e com pós-graduação em Gestão de Negócios pela Fundação Dom Cabral, João descobriu na UA a oportunidade de trabalhar com sua grande paixão, a música.</div>
+
+          </div>
+          <img src="./dist/images/equipe/joao.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">BRUNO MACHADO</div>
+            <div class="mentor-text">Publicitário formado pela PUC MINAS, atua há mais de 10 anos na área do MKT estratégico, design UX/UI, desenvolvimento web e o que mais vier pela frente.</div>
+
+          </div>
+          <img src="./dist/images/equipe/bruno-machado.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">CAROLINE LEROY</div>
+            <div class="mentor-text">Graduada em design gráfico, se especializou em Produção de Conteúdo de ensino musical online. Musicista nas horas vagas, estuda violão e canto.</div>
+
+          </div>
+          <img src="./dist/images/equipe/carol.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">VINÍCIUS MESQUITA</div>
+            <div class="mentor-text">Engenheiro de Produção e Percussionista nas poucas horas vagas, Vinicius é o cara das planilhas e também o responsável pelo sucesso do cliente da UA.</div>
+
+          </div>
+          <img src="./dist/images/equipe/vinicius.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">LUCIANO CORREIA</div>
+            <div class="mentor-text">Graduando em Cinema e Audiovisual, é responsável pelas edições dos vídeos da UA e Sonastério. O interesse por música começou na infância após assistir o videoclipe By The Way do Red Hot Chili Peppers e, desde então, ele nunca mais foi o mesmo.</div>
+
+          </div>
+          <img src="./dist/images/equipe/luciano.png" />
+        </div>
+        <div class="team-members--person">
+          <div class="overlay-member">
+            <div class="mentor-name">MANOLO</div>
+            <div class="mentor-text">VideoMaker</div>
+
+          </div>
+          <img src="./dist/images/equipe/pessoa.png" />
+        </div>
+      </div>
+    </section>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <!-- Formulário -->
+  <form id="llCaptureForm" class="llformCustom"  style="background-color: rgba(245, 245, 245, 1) !important;"  action="//paginas.rocks/capture" method="post">
+     <input type="hidden" id="mid" name="mid" value="332589" />
+     <input type="hidden" id="fid" name="fid" value="15213" />
+     <div>
+         <label  style="color: rgba(46, 73, 107, 1) !important;"  for="llfield33170">Nome Completo</label>
+         <input type="text" id="llfield33170" name="llfield33170" placeholder="Insira seu nome completo" data-required="true" />
+         <div class="field-error" id="llerror33170"></div>
+     </div>
+     <div>
+         <label  style="color: rgba(46, 73, 107, 1) !important;"  for="llfield33169">E-mail</label>
+         <input type="email" id="llfield33169" name="llfield33169" placeholder="Insira seu e-mail" data-required="true" />
+         <div class="field-error" id="llerror33169"></div>
+     </div>
+     <div>
+         <label  style="color: rgba(46, 73, 107, 1) !important;"  for="llfield33171">Celular</label>
+         <input type="tel" id="llfield33171" name="llfield33171" placeholder="Insira seu celular com DDD" data-required="true" />
+         <div class="field-error" id="llerror33171"></div>
+     </div>
+     <div>
+         <label  style="color: rgba(46, 73, 107, 1) !important;"  for="llfield33172">Profissão</label>
+         <input type="text" id="llfield33172" name="llfield33172" placeholder="Insira sua profissão" data-required="true" />
+         <div class="field-error" id="llerror33172"></div>
+     </div>
+     <div>
+         <label  style="color: rgba(46, 73, 107, 1) !important;"  for="llfield33191">Mensagem</label>
+         <textarea id="llfield33191" name="llfield33191" placeholder="Envie-nos uma mensagem" data-required="true"></textarea>
+         <div class="field-error" id="llerror33191"></div>
+     </div>
+     <div class="button-bar">
+         <button  style="background-color: rgba(47, 67, 110, 1) !important;"  type="submit">Enviar mensagem</button>
+     </div>
+     <div class="loading-box">
+         <img src="//paginas.rocks/content/images/spinner.gif" />
+         <div>Mensagem enviada com sucesso!</div>
+     </div>
+     <div class="error-box">
+         <img src="//paginas.rocks/content/images/error-icon.png" />
+         <div></div>
+         <button type="button" class="btn" id="btn-error">Ok</button>
+     </div>
+     <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=15213&m=332589" style="display: none;" />
+  </form>
+  <!-- footer -->
+  <footer>
+    <div class="logo">
+      <img src="./dist/images/ua-logo-branca.png" >
+    </div>
+    <div class="sitemap">
+      <div class="wrapper">
+        <ul>
+          <li class="column-header">ÁREA DO ALUNO
+          </li>
+          <li>
+            <a href="https://universidadedoaudio.club.hotmart.com/login">Acesso à plataforma</a>
+          </li>
+          <li>
+            <a href="/provas.html">Provas</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="column-header">SOBRE A UA</li>
+          <li>
+            <a href="/duvidas.html">Dúvidas</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://pay.hotmart.com/E15715814G?off=vo0kdgtx&checkoutMode=10" class="dias-gratis">7 dias grátis</a>
+          </li>
+          <li>
+            <a href="#plans" class="assinar">Assine agora</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="contact-info">
+      <div class="tel">+55 31 99936-3369</div>
+      <div class="mail">
+        <a href="mailto:contato@universidadedoaudio.com">contato@universidadedoaudio.com</a>
+      </div>
+      <div class="redes-sociais">
+        <a class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="whatsapp"></a>
+        <a class="youtube"></a>
+        <a class="facebook"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="dist/noframework.waypoints.min.js"></script>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+  <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
+</body>
 </html>
